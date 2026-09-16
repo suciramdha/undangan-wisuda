@@ -1,0 +1,10615 @@
+css
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   DASAR
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #1f2a3a;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+button,
+a {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   COVER
+========================= */
+
+.cover {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: #f5f1e8;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-content {
+    max-width: 600px;
+
+    animation: fadeUp 1s ease;
+}
+
+
+/* =========================
+   FOTO COVER
+========================= */
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+
+    border: 5px solid #ffffff;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.label {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   JUDUL
+========================= */
+
+.cover h1 {
+    font-size: 70px;
+
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   NAMA
+========================= */
+
+.name {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   TANGGAL
+========================= */
+
+.date {
+    font-size: 14px;
+
+    color: #777;
+
+    margin-bottom: 32px;
+}
+
+.date::before {
+    content: "•  2026  •";
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   TOMBOL BUKA
+========================= */
+
+.cover button {
+    padding: 14px 32px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #1f2a3a;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(31, 42, 58, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.cover button:hover {
+    background-color: #2c3b50;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(31, 42, 58, 0.25);
+}
+
+
+/* =========================
+   ISI UNDANGAN
+========================= */
+
+#invitation {
+    display: none;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 25px;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.intro .label {
+    margin-bottom: 15px;
+}
+
+.intro h2 {
+    font-size: 42px;
+
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+
+    color: #666;
+
+    line-height: 1.9;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background-color: #ffffff;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.profile-large {
+    width: 220px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 110px 110px 15px 15px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease;
+}
+
+.profile-large:hover {
+    transform: scale(1.02);
+}
+
+.profile h2 {
+    font-size: 30px;
+
+    font-weight: normal;
+
+    margin-top: 5px;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 1px;
+}
+
+.profile p {
+    color: #777;
+
+    margin: 4px 0;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #e9e2d6;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.quote p {
+    max-width: 620px;
+
+    margin: auto;
+
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+
+    font-style: italic;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   DETAIL ACARA
+========================= */
+
+.event {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.event h2 {
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 35px;
+}
+
+.event-card {
+    max-width: 520px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e4dfd6;
+
+    border-radius: 8px;
+}
+
+.event-item {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-item h3 {
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
+
+.event-item p {
+    color: #666;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.countdown-section .label {
+    margin-bottom: 12px;
+}
+
+.countdown-section h2 {
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   COUNTDOWN BOX
+========================= */
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.count-box {
+    width: 100px;
+
+    padding: 22px 10px;
+
+    background-color: #f5f1e8;
+
+    border: 1px solid #e5dfd3;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.count-box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.count-box span {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: normal;
+
+    color: #1f2a3a;
+
+    margin-bottom: 5px;
+}
+
+.count-box small {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   LOKASI
+========================= */
+
+.location {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.location h2 {
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.location-text {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   TOMBOL LOKASI
+========================= */
+
+.location-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 28px;
+
+    background-color: #1f2a3a;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 8px 20px rgba(31, 42, 58, 0.18);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.location-button::after {
+    content: "→";
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+.location-button:hover {
+    background-color: #2c3b50;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(31, 42, 58, 0.25);
+}
+
+.location-button:hover::after {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   PENUTUP
+========================= */
+
+.closing {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #e9e2d6;
+
+    animation: fadeUp 0.8s ease;
+}
+
+.closing-text {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+.closing h2 {
+    font-size: 42px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.closing-name {
+    margin-top: 35px;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   TRANSISI BUKA UNDANGAN
+========================= */
+
+.cover-opening {
+    animation:
+        coverOpen 1.2s ease forwards;
+
+    pointer-events: none;
+}
+
+@keyframes coverOpen {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+#invitation.invitation-opening {
+    animation:
+        invitationOpen 1.2s ease forwards;
+}
+
+@keyframes invitationOpen {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================
+   ANIMASI UMUM
+========================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .cover {
+        padding: 30px 20px;
+    }
+
+    .profile-photo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cover h1 {
+        font-size: 52px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .intro h2 {
+        font-size: 34px;
+    }
+
+    .profile-large {
+        width: 190px;
+        height: 250px;
+    }
+
+    .quote p {
+        font-size: 21px;
+    }
+
+    .event h2,
+    .location h2,
+    .countdown-section h2 {
+        font-size: 32px;
+    }
+
+    .countdown-section {
+        padding: 80px 20px;
+    }
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .count-box {
+        width: 72px;
+        padding: 17px 5px;
+    }
+
+    .count-box span {
+        font-size: 25px;
+    }
+
+    .count-box small {
+        font-size: 9px;
+    }
+
+}
+
+/* =========================
+   MEMBUAT BAGIAN INTRO LEBIH MEWAH
+   TAMBAHKAN DI PALING BAWAH
+========================= */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Ornamen lingkaran kiri atas */
+
+.intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border: 1px solid rgba(160, 130, 75, 0.18);
+
+    border-radius: 50%;
+
+    top: -160px;
+    left: -160px;
+}
+
+
+/* Ornamen lingkaran kanan bawah */
+
+.intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border: 1px solid rgba(160, 130, 75, 0.15);
+
+    border-radius: 50%;
+
+    bottom: -200px;
+    right: -200px;
+}
+
+
+/* Isi tetap berada di atas ornamen */
+
+.intro > * {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   ORNAMEN GOLD DI BAWAH LABEL
+========================= */
+
+.intro .label::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 14px;
+
+    font-size: 13px;
+
+    letter-spacing: 0;
+
+    color: #a0824b;
+}
+
+
+/* =========================
+   GARIS ELEGAN DI BAWAH NAMA
+========================= */
+
+.intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    margin: 18px auto 0;
+
+    background-color: #a0824b;
+}
+
+
+/* =========================
+   EFEK HALUS PADA TEKS
+========================= */
+
+.intro h2 {
+    text-shadow:
+        0 2px 8px rgba(23, 34, 53, 0.06);
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .intro::before {
+        width: 230px;
+        height: 230px;
+
+        top: -115px;
+        left: -115px;
+    }
+
+    .intro::after {
+        width: 280px;
+        height: 280px;
+
+        bottom: -140px;
+        right: -140px;
+    }
+
+}
+
+/* =========================
+   INTRO - LUXURY FRAME
+========================= */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Frame tipis di dalam section */
+
+.intro .intro-text::before {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 1px;
+
+    margin: 0 auto 28px;
+
+    background-color: #a0824b;
+}
+
+
+/* =========================
+   AKSEN SUDUT KIRI
+========================= */
+
+.intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(160, 130, 75, 0.18);
+
+    top: 35px;
+    left: 35px;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   AKSEN SUDUT KANAN
+========================= */
+
+.intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(160, 130, 75, 0.18);
+
+    bottom: 35px;
+    right: 35px;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   ORNAMEN GOLD KECIL
+========================= */
+
+.intro h2::before {
+    content: "◆";
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 7px;
+
+    color: #a0824b;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   LABEL LEBIH PREMIUM
+========================= */
+
+.intro .label {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    letter-spacing: 6px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   NAMA LEBIH ELEGAN
+========================= */
+
+.intro h2 {
+    font-size: 54px;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 3px 15px rgba(23, 34, 53, 0.08);
+}
+
+
+/* =========================
+   TEKS PEMBUKA
+========================= */
+
+.intro-text {
+    font-size: 15px;
+
+    letter-spacing: 0.2px;
+
+    max-width: 650px;
+
+    color: #5f6268;
+}
+
+
+/* =========================
+   EFEK CAHAYA LEMBUT
+========================= */
+
+.intro-text::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 30px;
+
+    color: #a0824b;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .intro::before {
+        width: 170px;
+        height: 170px;
+
+        top: 20px;
+        left: 20px;
+    }
+
+    .intro::after {
+        width: 170px;
+        height: 170px;
+
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .intro .label {
+        letter-spacing: 4px;
+    }
+
+}
+
+/* =========================
+   INTRO LUXURY EDITORIAL
+========================= */
+
+.intro {
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(247, 243, 235, 0.95) 45%,
+            #eee7da 100%
+        );
+
+    box-shadow:
+        inset 0 0 0 1px rgba(160, 130, 75, 0.10),
+        inset 0 0 80px rgba(160, 130, 75, 0.05);
+}
+
+
+/* =========================
+   FRAME DALAM
+========================= */
+
+.intro {
+    margin: 0;
+
+    border-top: 1px solid rgba(160, 130, 75, 0.18);
+    border-bottom: 1px solid rgba(160, 130, 75, 0.18);
+}
+
+
+/* =========================
+   AKSEN SUDUT PREMIUM
+========================= */
+
+.intro h2 {
+    position: relative;
+
+    padding: 0 35px;
+}
+
+
+/* Garis kiri-kanan nama */
+
+.intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+    height: 1px;
+
+    margin: 20px auto 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #a0824b,
+        transparent
+    );
+}
+
+
+/* =========================
+   ORNAMEN ATAS
+========================= */
+
+.intro .label {
+    position: relative;
+
+    padding: 0 35px;
+}
+
+.intro .label::before {
+    content: "—";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #a0824b;
+
+    font-size: 14px;
+}
+
+.intro .label::after {
+    content: "—";
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    color: #a0824b;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   ORNAMEN BAWAH
+========================= */
+
+.intro-text::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 35px;
+
+    color: #a0824b;
+
+    font-size: 13px;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================
+   EFEK ELEGAN PADA NAMA
+========================= */
+
+.intro h2 {
+    text-shadow:
+        0 5px 20px rgba(23, 34, 53, 0.08);
+}
+
+
+/* =========================
+   GARIS DEKORASI HALUS
+========================= */
+
+.intro-text {
+    position: relative;
+
+    padding-top: 5px;
+}
+
+.intro-text::before {
+    content: "EST. • 2026 •";
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #a0824b;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .intro h2 {
+        padding: 0 25px;
+
+        font-size: 40px;
+    }
+
+    .intro .label {
+        padding: 0 28px;
+
+        font-size: 9px;
+    }
+
+    .intro-text::before {
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+}
+
+/* =========================
+   EXTRA LUXURY INTRO
+========================= */
+
+.intro {
+    position: relative;
+    isolation: isolate;
+}
+
+
+/* =========================
+   FRAME LUAR
+========================= */
+
+.intro {
+    border-top: 1px solid rgba(160, 130, 75, 0.22);
+    border-bottom: 1px solid rgba(160, 130, 75, 0.22);
+}
+
+
+/* =========================
+   GARIS VERTIKAL SAMPING
+========================= */
+
+.intro::before {
+    width: 1px;
+    height: 55%;
+
+    top: 22%;
+    left: 7%;
+
+    border: none;
+
+    background-color: rgba(160, 130, 75, 0.18);
+
+    border-radius: 0;
+}
+
+.intro::after {
+    width: 1px;
+    height: 55%;
+
+    bottom: auto;
+    top: 22%;
+    right: 7%;
+
+    border: none;
+
+    background-color: rgba(160, 130, 75, 0.18);
+
+    border-radius: 0;
+}
+
+
+/* =========================
+   NOMOR HALAMAN
+========================= */
+
+.intro .label::before {
+    content: "01  —";
+
+    position: absolute;
+
+    left: -55px;
+
+    color: #a0824b;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+.intro .label::after {
+    content: "—  28.09.26";
+
+    position: absolute;
+
+    right: -75px;
+
+    top: 0;
+
+    color: #a0824b;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   AKSEN DI ATAS NAMA
+========================= */
+
+.intro h2::before {
+    content: "✦";
+
+    display: block;
+
+    color: #a0824b;
+
+    font-size: 10px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   GARIS BAWAH NAMA
+========================= */
+
+.intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+
+    height: 1px;
+
+    margin: 22px auto 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #a0824b,
+        transparent
+    );
+}
+
+
+/* =========================
+   TEKS PEMBUKA
+========================= */
+
+.intro-text {
+    max-width: 580px;
+
+    font-size: 14px;
+
+    line-height: 2.1;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   ORNAMEN AKHIR
+========================= */
+
+.intro-text::after {
+    content: "◆   ◆   ◆";
+
+    display: block;
+
+    margin-top: 35px;
+
+    color: #a0824b;
+
+    font-size: 5px;
+
+    letter-spacing: 8px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .intro::before {
+        left: 4%;
+        height: 50%;
+    }
+
+    .intro::after {
+        right: 4%;
+        height: 50%;
+    }
+
+    .intro .label::before {
+        left: -5px;
+
+        top: -25px;
+    }
+
+    .intro .label::after {
+        right: -5px;
+
+        top: 25px;
+    }
+
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .intro-text {
+        font-size: 13px;
+
+        padding: 0 20px;
+    }
+
+}
+
+/* =====================================================
+   LUXURY GRADUATION THEME
+   TAMBAHKAN DI PALING BAWAH style.css
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+body {
+    background-color: #f7f3eb;
+    color: #172235;
+}
+
+::selection {
+    background-color: #172235;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   COVER — ELEGANT OPENING
+===================================================== */
+
+.cover {
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #f8f4ec 55%,
+            #ece4d7 100%
+        );
+
+    border-bottom: 1px solid rgba(160, 130, 75, 0.25);
+}
+
+
+/* Ornamen sudut */
+
+.cover::before {
+    width: 500px;
+    height: 500px;
+
+    top: -250px;
+    left: -250px;
+
+    border-color: rgba(160, 130, 75, 0.16);
+}
+
+.cover::after {
+    width: 500px;
+    height: 500px;
+
+    bottom: -250px;
+    right: -250px;
+
+    border-color: rgba(160, 130, 75, 0.16);
+}
+
+
+/* Foto cover */
+
+.profile-photo {
+    border: 7px solid #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(23, 34, 53, 0.16),
+        0 0 0 1px rgba(160, 130, 75, 0.15);
+}
+
+
+/* Judul cover */
+
+.cover h1 {
+    color: #172235;
+
+    text-shadow:
+        0 4px 15px rgba(23, 34, 53, 0.08);
+}
+
+
+/* Nama */
+
+.name {
+    color: #a0824b;
+}
+
+
+/* Tombol */
+
+.cover button {
+    background-color: #172235;
+
+    border: 1px solid #172235;
+}
+
+.cover button:hover {
+    background-color: #a0824b;
+
+    border-color: #a0824b;
+}
+
+
+/* =====================================================
+   INTRO — LUXURY EDITORIAL
+===================================================== */
+
+.intro {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 80vh;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ffffff 0%,
+            #f7f3eb 60%,
+            #eee7da 100%
+        );
+
+    border-top: 1px solid rgba(160, 130, 75, 0.18);
+    border-bottom: 1px solid rgba(160, 130, 75, 0.18);
+}
+
+
+/* Garis vertikal */
+
+.intro::before {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 55%;
+
+    top: 22%;
+    left: 7%;
+
+    background-color: rgba(160, 130, 75, 0.18);
+
+    border: none;
+
+    pointer-events: none;
+}
+
+.intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 1px;
+    height: 55%;
+
+    top: 22%;
+    right: 7%;
+
+    background-color: rgba(160, 130, 75, 0.18);
+
+    border: none;
+
+    pointer-events: none;
+}
+
+
+/* Semua isi di atas ornamen */
+
+.intro > * {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Label */
+
+.intro .label {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    letter-spacing: 6px;
+
+    position: relative;
+
+    padding: 0 45px;
+}
+
+.intro .label::before {
+    content: "—";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #a0824b;
+}
+
+.intro .label::after {
+    content: "—";
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    color: #a0824b;
+
+    margin: 0;
+}
+
+
+/* Nama */
+
+.intro h2 {
+    font-size: 56px;
+
+    letter-spacing: 2px;
+
+    color: #172235;
+
+    text-shadow:
+        0 5px 20px rgba(23, 34, 53, 0.08);
+}
+
+.intro h2::before {
+    content: "✦";
+
+    display: block;
+
+    color: #a0824b;
+
+    font-size: 10px;
+
+    margin-bottom: 14px;
+}
+
+.intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 90px;
+    height: 1px;
+
+    margin: 22px auto 0;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        #a0824b,
+        transparent
+    );
+}
+
+
+/* Teks */
+
+.intro-text {
+    max-width: 600px;
+
+    color: #5f6268;
+
+    font-size: 14px;
+
+    line-height: 2.1;
+
+    letter-spacing: 0.2px;
+}
+
+.intro-text::before {
+    content: "EST. • 2026 •";
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #a0824b;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+.intro-text::after {
+    content: "◆   ◆   ◆";
+
+    display: block;
+
+    margin-top: 35px;
+
+    color: #a0824b;
+
+    font-size: 5px;
+
+    letter-spacing: 8px;
+}
+
+
+/* =====================================================
+   PROFILE — FOTO UTAMA
+===================================================== */
+
+.profile {
+    padding: 120px 20px;
+
+    background-color: #ffffff;
+
+    position: relative;
+
+    border-bottom: 1px solid #e8e0d3;
+}
+
+
+/* Label kecil */
+
+.profile::before {
+    content: "THE GRADUATE";
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #a0824b;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+}
+
+
+/* Foto */
+
+.profile-large {
+    width: 250px;
+    height: 320px;
+
+    border-radius: 125px 125px 15px 15px;
+
+    border: 7px solid #f7f3eb;
+
+    box-shadow:
+        0 25px 55px rgba(23, 34, 53, 0.15),
+        0 0 0 1px rgba(160, 130, 75, 0.12);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.profile-large:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 30px 65px rgba(23, 34, 53, 0.2);
+}
+
+
+/* Nama */
+
+.profile h2 {
+    font-size: 36px;
+
+    color: #172235;
+
+    letter-spacing: 2px;
+
+    margin-top: 5px;
+}
+
+.profile p {
+    color: #777;
+}
+
+
+/* Ornamen */
+
+.profile::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 40px;
+
+    color: #a0824b;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   QUOTE — NAVY LUXURY
+===================================================== */
+
+.quote {
+    min-height: 50vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 110px 25px;
+
+    background-color: #172235;
+
+    color: #ffffff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Lingkaran dekorasi */
+
+.quote::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border: 1px solid rgba(201, 170, 114, 0.20);
+
+    border-radius: 50%;
+
+    top: -210px;
+    left: -210px;
+}
+
+.quote::after {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border: 1px solid rgba(201, 170, 114, 0.20);
+
+    border-radius: 50%;
+
+    bottom: -210px;
+    right: -210px;
+}
+
+
+/* Kutipan */
+
+.quote p {
+    max-width: 700px;
+
+    font-size: 29px;
+
+    line-height: 1.8;
+
+    color: #ffffff;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   EVENT — DETAIL ACARA
+===================================================== */
+
+.event {
+    padding: 120px 20px;
+
+    background-color: #f7f3eb;
+
+    position: relative;
+}
+
+
+/* Judul */
+
+.event h2 {
+    font-size: 44px;
+
+    color: #172235;
+
+    margin-bottom: 45px;
+}
+
+
+/* Card */
+
+.event-card {
+    max-width: 650px;
+
+    padding: 25px 50px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e3d8c7;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 20px 50px rgba(23, 34, 53, 0.07);
+}
+
+
+/* Item */
+
+.event-item {
+    padding: 28px 0;
+
+    border-bottom: 1px solid #eee8dc;
+}
+
+.event-item h3 {
+    color: #a0824b;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+}
+
+.event-item p {
+    color: #666;
+}
+
+
+/* =====================================================
+   COUNTDOWN — PREMIUM
+===================================================== */
+
+.countdown-section {
+    padding: 120px 20px;
+
+    background-color: #ffffff;
+
+    border-top: 1px solid #eee7da;
+    border-bottom: 1px solid #eee7da;
+}
+
+.countdown-section h2 {
+    font-size: 44px;
+
+    color: #172235;
+
+    margin-bottom: 55px;
+}
+
+
+/* Countdown */
+
+.countdown {
+    gap: 18px;
+}
+
+.count-box {
+    width: 115px;
+
+    min-height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: #f7f3eb;
+
+    border: 1px solid #dfd3bf;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 10px 25px rgba(23, 34, 53, 0.05);
+}
+
+.count-box span {
+    font-size: 37px;
+
+    color: #172235;
+}
+
+.count-box small {
+    color: #a0824b;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.location {
+    padding: 120px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f7f3eb,
+            #eee7da
+        );
+
+    position: relative;
+}
+
+
+/* Dekorasi */
+
+.location::before {
+    content: "LOCATION";
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #a0824b;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+}
+
+.location h2 {
+    font-size: 44px;
+
+    color: #172235;
+
+    margin-bottom: 22px;
+}
+
+.location-text {
+    color: #666;
+
+    line-height: 2;
+
+    margin-bottom: 35px;
+}
+
+
+/* Tombol */
+
+.location-button {
+    padding: 16px 35px;
+
+    background-color: #172235;
+
+    border: 1px solid #172235;
+
+    border-radius: 3px;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 12px 25px rgba(23, 34, 53, 0.15);
+}
+
+.location-button:hover {
+    background-color: #a0824b;
+
+    border-color: #a0824b;
+}
+
+
+/* =====================================================
+   CLOSING — FINAL PAGE
+===================================================== */
+
+.closing {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 120px 25px;
+
+    background-color: #172235;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Frame */
+
+.closing::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 35px;
+
+    border: 1px solid rgba(201, 170, 114, 0.22);
+
+    pointer-events: none;
+}
+
+
+/* Ornamen tengah */
+
+.closing::after {
+    content: "✦";
+
+    position: absolute;
+
+    top: 30px;
+
+    color: #c9aa72;
+
+    font-size: 12px;
+}
+
+
+/* Isi */
+
+.closing-text {
+    max-width: 600px;
+
+    color: #d6d6d6;
+
+    line-height: 2;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.closing h2 {
+    font-size: 52px;
+
+    color: #ffffff;
+
+    letter-spacing: 1px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.closing-name {
+    font-size: 28px;
+
+    letter-spacing: 4px;
+
+    color: #c9aa72;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   RESPONSIVE HP
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .cover h1 {
+        font-size: 54px;
+    }
+
+    .intro {
+        min-height: 70vh;
+
+        padding: 90px 25px;
+    }
+
+    .intro h2 {
+        font-size: 40px;
+    }
+
+    .intro::before {
+        left: 4%;
+
+        height: 45%;
+    }
+
+    .intro::after {
+        right: 4%;
+
+        height: 45%;
+    }
+
+    .profile {
+        padding: 90px 20px;
+    }
+
+    .profile-large {
+        width: 200px;
+        height: 260px;
+    }
+
+    .quote {
+        min-height: 45vh;
+
+        padding: 90px 25px;
+    }
+
+    .quote p {
+        font-size: 21px;
+    }
+
+    .event {
+        padding: 90px 20px;
+    }
+
+    .event h2,
+    .location h2,
+    .countdown-section h2 {
+        font-size: 34px;
+    }
+
+    .event-card {
+        padding: 15px 25px;
+    }
+
+    .countdown-section {
+        padding: 90px 15px;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .count-box {
+        width: 74px;
+
+        min-height: 90px;
+
+        padding: 15px 5px;
+    }
+
+    .count-box span {
+        font-size: 25px;
+    }
+
+    .count-box small {
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+    .location {
+        padding: 90px 20px;
+    }
+
+    .closing {
+        min-height: 65vh;
+
+        padding: 90px 25px;
+    }
+
+    .closing::before {
+        inset: 20px;
+    }
+
+    .closing h2 {
+        font-size: 38px;
+    }
+
+    .closing-name {
+        font-size: 23px;
+    }
+}
+
+/* =====================================================
+   LUXURY FINAL TOUCH — TAMBAHKAN DI PALING BAWAH
+===================================================== */
+
+/* =========================
+   WARNA LUXURY
+========================= */
+
+:root {
+    --navy: #172337;
+    --navy-soft: #26354a;
+    --cream: #f8f5ee;
+    --white: #ffffff;
+    --gold: #b49a68;
+    --gold-soft: #d4c29a;
+    --text-soft: #77736b;
+}
+
+
+/* =========================
+   COVER LUXURY
+========================= */
+
+.cover {
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(255,255,255,0.9),
+            transparent 40%
+        ),
+        var(--cream);
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* garis kecil elegan di atas foto */
+
+.cover-content::before {
+    content: "✦";
+
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 15px;
+
+    margin-bottom: 16px;
+
+    letter-spacing: 4px;
+}
+
+
+/* foto lebih premium */
+
+.profile-photo {
+    border: 6px solid rgba(255,255,255,0.95);
+
+    box-shadow:
+        0 15px 35px rgba(23,35,55,0.16);
+
+    margin-bottom: 28px;
+}
+
+
+/* label */
+
+.cover .label {
+    color: var(--gold);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+
+/* judul */
+
+.cover h1 {
+    color: var(--navy);
+
+    letter-spacing: -1px;
+
+    text-shadow:
+        0 1px 0 rgba(255,255,255,0.8);
+}
+
+
+/* nama */
+
+.cover .name {
+    color: var(--navy);
+
+    font-weight: normal;
+
+    position: relative;
+}
+
+
+/* aksen kecil bawah nama */
+
+.cover .name::after {
+    content: "";
+
+    display: block;
+
+    width: 38px;
+
+    height: 1px;
+
+    background-color: var(--gold);
+
+    margin: 12px auto 0;
+}
+
+
+/* tanggal */
+
+.cover .date {
+    color: var(--text-soft);
+}
+
+
+/* tombol */
+
+.cover button {
+    background-color: var(--navy);
+
+    border: 1px solid var(--navy);
+
+    border-radius: 4px;
+
+    padding: 14px 34px;
+
+    box-shadow:
+        0 8px 20px rgba(23,35,55,0.15);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cover button:hover {
+    background-color: var(--navy-soft);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(23,35,55,0.20);
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    position: relative;
+
+    background-color: var(--cream);
+
+    overflow: hidden;
+}
+
+.intro .label {
+    color: var(--gold);
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.intro h2 {
+    color: var(--navy);
+
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    color: #68655f;
+
+    font-size: 15px;
+}
+
+
+/* ornament tipis */
+
+.intro::after {
+    content: "✦";
+
+    position: absolute;
+
+    bottom: 45px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: var(--gold);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+    position: relative;
+
+    background-color: var(--white);
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+}
+
+.profile .label {
+    color: var(--gold);
+}
+
+.profile-large {
+    border-radius: 110px 110px 12px 12px;
+
+    border: 5px solid var(--cream);
+
+    box-shadow:
+        0 18px 40px rgba(23,35,55,0.14);
+}
+
+.profile h2 {
+    color: var(--navy);
+}
+
+.profile p {
+    color: #77736b;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+    background-color: var(--navy);
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.quote::before {
+    content: "“";
+
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    line-height: 0.7;
+
+    color: var(--gold-soft);
+
+    margin-bottom: 18px;
+}
+
+.quote p {
+    color: #f5f1e8;
+
+    font-size: 24px;
+
+    max-width: 650px;
+}
+
+
+/* =========================
+   EVENT
+========================= */
+
+.event {
+    background-color: var(--cream);
+
+    position: relative;
+}
+
+.event .label {
+    color: var(--gold);
+
+    font-weight: bold;
+}
+
+.event h2 {
+    color: var(--navy);
+}
+
+.event-card {
+    background-color: var(--white);
+
+    border: 1px solid #e5dfd3;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 15px 35px rgba(23,35,55,0.06);
+}
+
+.event-item {
+    border-bottom-color: #eee9df;
+}
+
+.event-item h3 {
+    color: var(--navy);
+
+    font-size: 18px;
+}
+
+.event-item p {
+    color: #77736b;
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.countdown-section {
+    background-color: var(--white);
+
+    position: relative;
+}
+
+.countdown-section .label {
+    color: var(--gold);
+
+    font-weight: bold;
+}
+
+.countdown-section h2 {
+    color: var(--navy);
+}
+
+.count-box {
+    background-color: var(--cream);
+
+    border: 1px solid #e5dfd3;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 8px 20px rgba(23,35,55,0.04);
+}
+
+.count-box span {
+    color: var(--navy);
+}
+
+.count-box small {
+    color: #817d75;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location {
+    background-color: var(--cream);
+
+    position: relative;
+}
+
+.location .label {
+    color: var(--gold);
+
+    font-weight: bold;
+}
+
+.location h2 {
+    color: var(--navy);
+}
+
+.location-text {
+    color: #706d67;
+}
+
+.location-button {
+    background-color: var(--navy);
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 8px 20px rgba(23,35,55,0.15);
+}
+
+.location-button:hover {
+    background-color: var(--navy-soft);
+}
+
+
+/* =========================
+   CLOSING
+========================= */
+
+.closing {
+    background-color: var(--navy);
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.closing-text {
+    color: #e7e2d8;
+}
+
+.closing h2 {
+    color: white;
+}
+
+.closing > p:not(.closing-text):not(.closing-name) {
+    color: #cfc9bd;
+}
+
+.closing-name {
+    color: var(--gold-soft);
+
+    letter-spacing: 2px;
+}
+
+
+/* aksen kecil */
+
+.closing::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: var(--gold-soft);
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c5b38b;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .cover h1 {
+        font-size: 50px;
+    }
+
+    .cover-content::before {
+        margin-bottom: 12px;
+    }
+
+    .quote p {
+        font-size: 20px;
+
+        line-height: 1.7;
+    }
+
+    .event-card {
+        padding: 30px 22px;
+    }
+
+    .profile-large {
+        border-width: 4px;
+    }
+
+}
+
+/* =====================================================
+   LUXURY EDITORIAL COVER
+   Tambahkan PALING BAWAH style.css
+===================================================== */
+
+/* Frame tipis di seluruh cover */
+
+.cover::before {
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
+
+    border: 1px solid rgba(180, 154, 104, 0.35);
+
+    pointer-events: none;
+}
+
+
+/* Frame bagian dalam */
+
+.cover::after {
+    content: "";
+
+    position: absolute;
+
+    top: 29px;
+    left: 29px;
+    right: 29px;
+    bottom: 29px;
+
+    border: 1px solid rgba(180, 154, 104, 0.12);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   COVER CONTENT
+========================= */
+
+.cover-content {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 35px 20px;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.profile-photo {
+    width: 115px;
+    height: 115px;
+
+    margin-bottom: 25px;
+
+    border: 5px solid #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(23, 35, 55, 0.14);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.cover .label {
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: #b49a68;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   JUDUL UTAMA
+========================= */
+
+.cover h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(55px, 8vw, 78px);
+
+    line-height: 0.98;
+
+    font-weight: normal;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 27px;
+
+    color: #172337;
+}
+
+
+/* =========================
+   NAMA
+========================= */
+
+.cover .name {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    letter-spacing: 3px;
+
+    color: #172337;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================
+   TANGGAL
+========================= */
+
+.cover .date {
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #77736b;
+
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   TOMBOL PREMIUM
+========================= */
+
+.cover button {
+    min-width: 185px;
+
+    padding: 14px 30px;
+
+    background-color: #172337;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 2px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 10px 25px rgba(23, 35, 55, 0.15);
+}
+
+
+/* =========================
+   EFEK HOVER
+========================= */
+
+.cover button:hover {
+    background-color: #26354a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 28px rgba(23, 35, 55, 0.20);
+}
+
+
+/* =========================
+   ORNAMEN SEDERHANA
+========================= */
+
+.cover-content::after {
+    content: "28 · 09 · 2026";
+
+    display: block;
+
+    margin-top: 28px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #b49a68;
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .cover::before {
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .cover::after {
+        top: 21px;
+        left: 21px;
+        right: 21px;
+        bottom: 21px;
+    }
+
+    .cover-content {
+        padding: 25px 15px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cover h1 {
+        font-size: 50px;
+
+        letter-spacing: -1px;
+    }
+
+    .cover .name {
+        font-size: 21px;
+
+        letter-spacing: 2px;
+    }
+
+    .cover button {
+        min-width: 170px;
+    }
+
+}
+/* =====================================================
+   LANJUTAN DESIGN — PROFILE SAMPAI PENUTUP
+   Tambahkan di PALING BAWAH
+===================================================== */
+
+
+/* =====================================================
+   PROFILE — FOTO UTAMA
+===================================================== */
+
+.profile {
+    position: relative;
+
+    padding: 110px 20px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+/* Label kecil di atas foto */
+
+.profile::before {
+    content: "THE GRADUATE";
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: #a0824b;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+}
+
+
+/* Bingkai foto */
+
+.profile-large {
+    width: 245px;
+    height: 315px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    border: 7px solid #f7f3eb;
+
+    outline: 1px solid rgba(160, 130, 75, 0.55);
+
+    outline-offset: 8px;
+
+    box-shadow:
+        0 20px 45px rgba(23, 34, 53, 0.15);
+
+    margin-bottom: 35px;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.profile-large:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 28px 55px rgba(23, 34, 53, 0.20);
+}
+
+
+/* Nama */
+
+.profile h2 {
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    font-weight: normal;
+
+    color: #172235;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Garis kecil */
+
+.profile h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 1px;
+
+    background-color: #a0824b;
+
+    margin: 14px auto 18px;
+}
+
+
+/* Keterangan */
+
+.profile p {
+    color: #777;
+
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Aksen bawah */
+
+.profile::after {
+    content: "✦";
+
+    display: block;
+
+    margin-top: 35px;
+
+    color: #a0824b;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   QUOTE — HALAMAN NAVY
+===================================================== */
+
+.quote {
+    min-height: 55vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 100px 25px;
+
+    background-color: #172235;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Lingkaran dekorasi */
+
+.quote::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border: 1px solid rgba(201, 170, 114, 0.18);
+
+    border-radius: 50%;
+
+    top: -200px;
+    left: -200px;
+}
+
+
+/* Lingkaran kanan */
+
+.quote::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border: 1px solid rgba(201, 170, 114, 0.18);
+
+    border-radius: 50%;
+
+    bottom: -200px;
+    right: -200px;
+}
+
+
+/* Kutipan */
+
+.quote p {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 680px;
+
+    margin: auto;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+    color: #f8f5ee;
+}
+
+
+/* =====================================================
+   DETAIL ACARA
+===================================================== */
+
+.event {
+    padding: 110px 20px;
+
+    background-color: #f8f5ee;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+/* Label */
+
+.event .label {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Judul */
+
+.event h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    color: #172235;
+
+    margin-bottom: 45px;
+}
+
+
+/* Card */
+
+.event-card {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 20px 45px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e4dbcc;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 18px 40px rgba(23, 34, 53, 0.07);
+}
+
+
+/* Item */
+
+.event-item {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #eee8dc;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Judul item */
+
+.event-item h3 {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    color: #a0824b;
+
+    margin-bottom: 8px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Isi */
+
+.event-item p {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown-section {
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    border-top: 1px solid #eee8dc;
+
+    border-bottom: 1px solid #eee8dc;
+}
+
+
+.countdown-section .label {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+.countdown-section h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    color: #172235;
+
+    margin-bottom: 45px;
+}
+
+
+/* Countdown */
+
+.countdown {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Box */
+
+.count-box {
+    width: 105px;
+
+    min-height: 110px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 18px 10px;
+
+    background-color: #f8f5ee;
+
+    border: 1px solid #e2d8c7;
+
+    border-radius: 5px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.count-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(23, 34, 53, 0.10);
+}
+
+
+/* Angka */
+
+.count-box span {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    color: #172235;
+
+    margin-bottom: 5px;
+}
+
+
+/* Label */
+
+.count-box small {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.location {
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background-color: #f8f5ee;
+
+    position: relative;
+}
+
+
+/* Label */
+
+.location .label {
+    color: #a0824b;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Judul */
+
+.location h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    color: #172235;
+
+    margin-bottom: 20px;
+}
+
+
+/* Alamat */
+
+.location-text {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    margin-bottom: 30px;
+}
+
+
+/* Tombol */
+
+.location-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 30px;
+
+    background-color: #172235;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 10px 25px rgba(23, 34, 53, 0.15);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.location-button:hover {
+    background-color: #a0824b;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   CLOSING
+===================================================== */
+
+.closing {
+    min-height: 65vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 110px 25px;
+
+    text-align: center;
+
+    background-color: #172235;
+
+    color: #ffffff;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Bingkai luar */
+
+.closing::before {
+    content: "";
+
+    position: absolute;
+
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+
+    border: 1px solid rgba(201, 170, 114, 0.22);
+
+    pointer-events: none;
+}
+
+
+/* Ornamen */
+
+.closing::after {
+    content: "✦";
+
+    position: absolute;
+
+    top: 20px;
+
+    color: #c9aa72;
+
+    font-size: 12px;
+}
+
+
+/* Teks */
+
+.closing-text {
+    max-width: 600px;
+
+    color: #d8d8d8;
+
+    line-height: 2;
+
+    margin-bottom: 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Terima kasih */
+
+.closing h2 {
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    font-weight: normal;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Kalimat terakhir */
+
+.closing > p:not(.closing-text):not(.closing-name) {
+    color: #c9cdd3;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Nama */
+
+.closing-name {
+    margin-top: 35px;
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    letter-spacing: 4px;
+
+    color: #c9aa72;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .profile {
+        padding: 90px 20px;
+    }
+
+    .profile-large {
+        width: 200px;
+        height: 260px;
+
+        border-width: 5px;
+
+        outline-offset: 6px;
+    }
+
+    .profile h2 {
+        font-size: 31px;
+    }
+
+    .quote {
+        min-height: 45vh;
+
+        padding: 85px 25px;
+    }
+
+    .quote p {
+        font-size: 21px;
+
+        line-height: 1.7;
+    }
+
+    .event {
+        padding: 90px 20px;
+    }
+
+    .event h2,
+    .countdown-section h2,
+    .location h2 {
+        font-size: 34px;
+    }
+
+    .event-card {
+        padding: 15px 25px;
+    }
+
+    .countdown-section {
+        padding: 90px 15px;
+    }
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .count-box {
+        width: 73px;
+
+        min-height: 88px;
+
+        padding: 15px 5px;
+    }
+
+    .count-box span {
+        font-size: 25px;
+    }
+
+    .count-box small {
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+    .location {
+        padding: 90px 20px;
+    }
+
+    .closing {
+        min-height: 60vh;
+
+        padding: 90px 25px;
+    }
+
+    .closing::before {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .closing h2 {
+        font-size: 38px;
+    }
+
+    .closing-name {
+        font-size: 23px;
+    }
+
+}
+/* =========================================
+   POLISH COVER & FOTO - LUXURY STYLE
+   ========================================= */
+
+/* Foto wisudawan di cover */
+.profile-photo {
+    border: 4px solid #f8f5ee;
+
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.8),
+        0 0 0 6px #f8f5ee,
+        0 0 0 7px rgba(180, 154, 104, 0.45),
+        0 15px 35px rgba(15, 35, 58, 0.18);
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.9),
+        0 0 0 7px #f8f5ee,
+        0 0 0 8px rgba(180, 154, 104, 0.5),
+        0 20px 40px rgba(15, 35, 58, 0.22);
+}
+
+
+/* Foto utama di bagian profil */
+.profile-large {
+    border: 5px solid #f8f5ee;
+
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.8),
+        0 0 0 8px #f8f5ee,
+        0 0 0 9px rgba(180, 154, 104, 0.45),
+        0 20px 45px rgba(15, 35, 58, 0.2);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.profile-large:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.9),
+        0 0 0 9px #f8f5ee,
+        0 0 0 10px rgba(180, 154, 104, 0.5),
+        0 25px 50px rgba(15, 35, 58, 0.24);
+}
+
+
+/* Tulisan kecil tahun di cover */
+.cover .date::after {
+    content: "2026";
+    display: block;
+    margin-top: 10px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #b49a68;
+    opacity: 0.9;
+}
+
+
+/* Tombol cover lebih elegan */
+.cover button {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cover button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(15, 35, 58, 0.18);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .profile-large {
+        box-shadow:
+            0 0 0 1px rgba(180, 154, 104, 0.8),
+            0 0 0 6px #f8f5ee,
+            0 0 0 7px rgba(180, 154, 104, 0.45),
+            0 15px 30px rgba(15, 35, 58, 0.18);
+    }
+
+    .profile-photo {
+        box-shadow:
+            0 0 0 1px rgba(180, 154, 104, 0.8),
+            0 0 0 5px #f8f5ee,
+            0 0 0 6px rgba(180, 154, 104, 0.45),
+            0 12px 25px rgba(15, 35, 58, 0.18);
+    }
+}
+/* =========================================
+   PREMIUM COVER - GRADUATION DAY
+   ========================================= */
+
+/* Label kecil di atas judul */
+.cover .label {
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: #b49a68;
+    margin-bottom: 14px;
+}
+
+/* Judul utama */
+.cover h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -1px;
+
+    text-shadow: 0 3px 15px rgba(15, 35, 58, 0.08);
+}
+
+/* Nama wisudawan */
+.cover .name {
+    position: relative;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    color: #172f4d;
+    letter-spacing: 3px;
+
+    margin-top: 18px;
+}
+
+/* Ornamen kecil di kiri-kanan nama */
+.cover .name::before,
+.cover .name::after {
+    content: "";
+    display: inline-block;
+
+    width: 28px;
+    height: 1px;
+
+    background: #b49a68;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+/* Tanggal */
+.cover .date {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* Tombol dibuat lebih premium */
+.cover button {
+    margin-top: 25px;
+
+    background: #172f4d;
+    color: #f8f5ee;
+
+    border: 1px solid #b49a68;
+    border-radius: 2px;
+
+    padding: 13px 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+/* Efek hover */
+.cover button:hover {
+    background: #b49a68;
+    color: #172f4d;
+    border-color: #b49a68;
+}
+
+
+/* Animasi halus saat cover muncul */
+.cover-content {
+    animation: luxuryFade 1.2s ease both;
+}
+
+@keyframes luxuryFade {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .cover .label {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .cover h1 {
+        font-size: 48px;
+        line-height: 0.95;
+    }
+
+    .cover .name {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .cover .name::before,
+    .cover .name::after {
+        width: 18px;
+        margin: 0 7px;
+    }
+
+    .cover .date {
+        font-size: 11px;
+    }
+
+    .cover button {
+        padding: 12px 25px;
+        font-size: 11px;
+    }
+}
+/* =========================================
+   LUXURY ORNAMENTS
+   Tanpa nomor section
+   ========================================= */
+
+/* Hilangkan nomor yang sebelumnya */
+.intro::after,
+.event::after,
+.location::after {
+    content: none !important;
+}
+
+
+/* =========================================
+   ORNAMEN LENGKUNG
+   ========================================= */
+
+.intro,
+.event,
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before,
+.event::before,
+.location::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #b49a68;
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+
+/* Garis tipis kiri-kanan */
+.intro::after,
+.event::after,
+.location::after {
+    content: "" !important;
+
+    position: absolute;
+
+    top: 43px;
+    left: 50%;
+
+    width: 120px;
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(180, 154, 104, 0.65),
+        transparent
+    );
+}
+
+
+/* =========================================
+   HIASAN SUDUT
+   ========================================= */
+
+.intro,
+.event,
+.location,
+.closing {
+    --gold-soft: rgba(180, 154, 104, 0.28);
+}
+
+
+/* Sudut kiri atas */
+.intro > h2::before,
+.event > h2::before,
+.location > h2::before {
+    content: "❦";
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+
+    color: #b49a68;
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   PROFILE - ORNAMEN ELEGAN
+   ========================================= */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Lingkaran tipis di belakang foto */
+.profile::before {
+    content: "";
+
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    border: 1px solid rgba(180, 154, 104, 0.18);
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+}
+
+/* Lingkaran kedua */
+.profile::after {
+    content: "";
+
+    position: absolute;
+
+    width: 330px;
+    height: 330px;
+
+    border: 1px solid rgba(180, 154, 104, 0.10);
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   QUOTE - ORNAMEN BINTANG
+   ========================================= */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+.quote::before,
+.quote::after {
+    position: absolute;
+
+    font-family: Georgia, serif;
+    font-size: 80px;
+
+    color: rgba(180, 154, 104, 0.18);
+}
+
+.quote::before {
+    content: "“";
+
+    left: 8%;
+    top: 15px;
+}
+
+.quote::after {
+    content: "”";
+
+    right: 8%;
+    bottom: -20px;
+}
+
+
+/* =========================================
+   EVENT CARD
+   ========================================= */
+
+.event-card {
+    position: relative;
+}
+
+/* Ornamen kecil di atas card */
+.event-card::before {
+    content: "✦  ✦  ✦";
+
+    position: absolute;
+
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 0 15px;
+
+    background: #f8f5ee;
+
+    color: #b49a68;
+
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+
+/* =========================================
+   COUNTDOWN
+   ========================================= */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pola lingkaran dekoratif */
+.countdown-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border: 1px solid rgba(180, 154, 104, 0.14);
+    border-radius: 50%;
+
+    top: -150px;
+    left: -130px;
+}
+
+.countdown-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    border: 1px solid rgba(180, 154, 104, 0.10);
+    border-radius: 50%;
+
+    bottom: -130px;
+    right: -100px;
+}
+
+
+/* =========================================
+   LOCATION
+   ========================================= */
+
+.location-text {
+    position: relative;
+}
+
+.location-text::before {
+    content: "✦";
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #b49a68;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CLOSING
+   ========================================= */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen daun/bunga tipis */
+.closing::before {
+    content: "❦";
+
+    position: absolute;
+
+    top: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Georgia, serif;
+    font-size: 28px;
+
+    color: rgba(180, 154, 104, 0.65);
+}
+
+.closing::after {
+    content: "✦";
+
+    position: absolute;
+
+    bottom: 35px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(180, 154, 104, 0.55);
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .intro::after,
+    .event::after,
+    .location::after {
+        width: 90px;
+    }
+
+    .profile::before {
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile::after {
+        width: 255px;
+        height: 255px;
+    }
+
+    .quote::before {
+        left: 4%;
+    }
+
+    .quote::after {
+        right: 4%;
+    }
+}
+/* =========================================
+   EXTRA LUXURY DETAIL
+   Membuat tampilan lebih berisi & tidak polos
+   ========================================= */
+
+/* Background cover sedikit lebih hidup */
+.cover {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(180, 154, 104, 0.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(23, 47, 77, 0.07),
+            transparent 30%
+        ),
+        #f8f5ee;
+}
+
+
+/* Ornamen lingkaran besar yang sangat samar */
+.cover::before {
+    border-radius: 50%;
+    width: 420px;
+    height: 420px;
+
+    border: 1px solid rgba(180, 154, 104, 0.18);
+
+    top: -180px;
+    left: -180px;
+}
+
+.cover::after {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+
+    border: 1px solid rgba(180, 154, 104, 0.14);
+
+    right: -150px;
+    bottom: -150px;
+}
+
+
+/* Konten cover berada di atas ornamen */
+.cover-content {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Garis dekoratif kecil di atas foto */
+.cover-content::before {
+    content: "✦  2026  ✦";
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    color: #b49a68;
+}
+
+
+/* =========================================
+   PROFILE SECTION
+   ========================================= */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Lingkaran dekorasi samar di background */
+.profile::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(180, 154, 104, 0.14);
+    border-radius: 50%;
+
+    left: -180px;
+    top: 20px;
+
+    z-index: 0;
+}
+
+
+/* Pastikan isi berada di atas dekorasi */
+.profile > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   INTRO SECTION
+   ========================================= */
+
+.intro {
+    position: relative;
+}
+
+
+/* Nomor kecil sebagai aksen */
+.intro::after {
+    content: "01";
+
+    position: absolute;
+
+    right: 8%;
+    top: 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+
+    color: rgba(180, 154, 104, 0.10);
+}
+
+
+/* =========================================
+   EVENT SECTION
+   ========================================= */
+
+.event {
+    position: relative;
+}
+
+
+/* Nomor section */
+.event::after {
+    content: "02";
+
+    position: absolute;
+
+    right: 8%;
+    top: 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+
+    color: rgba(180, 154, 104, 0.10);
+}
+
+
+/* Card acara dibuat lebih berisi */
+.event-card {
+    position: relative;
+
+    border: 1px solid rgba(180, 154, 104, 0.45);
+
+    box-shadow:
+        0 12px 35px rgba(15, 35, 58, 0.07),
+        inset 0 0 0 4px rgba(248, 245, 238, 0.7);
+}
+
+
+/* Garis gold kecil di setiap item */
+.event-item {
+    position: relative;
+}
+
+.event-item::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: -12px;
+
+    transform: translateX(-50%);
+
+    width: 25px;
+    height: 1px;
+
+    background: #b49a68;
+}
+
+
+/* =========================================
+   COUNTDOWN
+   ========================================= */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Dekorasi lingkaran */
+.countdown-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(180, 154, 104, 0.12);
+    border-radius: 50%;
+
+    right: -150px;
+    top: -100px;
+}
+
+
+/* Countdown box */
+.count-box {
+    position: relative;
+
+    border: 1px solid rgba(180, 154, 104, 0.5);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   LOCATION
+   ========================================= */
+
+.location {
+    position: relative;
+}
+
+
+/* Nomor section */
+.location::after {
+    content: "03";
+
+    position: absolute;
+
+    right: 8%;
+    top: 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 55px;
+
+    color: rgba(180, 154, 104, 0.10);
+}
+
+
+/* =========================================
+   CLOSING
+   ========================================= */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Ornamen lingkaran belakang */
+.closing::before {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border: 1px solid rgba(180, 154, 104, 0.13);
+    border-radius: 50%;
+
+    left: -140px;
+    bottom: -100px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .cover-content::before {
+        font-size: 8px;
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .intro::after,
+    .event::after,
+    .location::after {
+        font-size: 40px;
+        right: 6%;
+    }
+
+    .profile::before {
+        width: 220px;
+        height: 220px;
+
+        left: -130px;
+    }
+
+    .countdown-section::before {
+        width: 220px;
+        height: 220px;
+
+        right: -120px;
+    }
+}
+/* =========================================
+   EXTRA DECORATION - ELEGANT GRADUATION
+   ========================================= */
+
+/* -----------------------------------------
+   COVER - ORNAMEN LEBIH BERISI
+   ----------------------------------------- */
+
+.cover {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Lingkaran besar transparan */
+.cover-content::after {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    border: 1px solid rgba(180, 154, 104, 0.10);
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+}
+
+/* Titik-titik dekoratif */
+.cover::marker {
+    display: none;
+}
+
+.cover-content {
+    position: relative;
+}
+
+/* Ornamen kiri atas */
+.cover-content::before {
+    content: "✦  ·  ✦";
+
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: Georgia, serif;
+    font-size: 13px;
+
+    letter-spacing: 6px;
+
+    color: #b49a68;
+}
+
+
+/* -----------------------------------------
+   FRAME FOTO COVER
+   ----------------------------------------- */
+
+.profile-photo {
+    position: relative;
+
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.85),
+        0 0 0 6px #f8f5ee,
+        0 0 0 7px rgba(180, 154, 104, 0.55),
+        0 0 0 13px rgba(180, 154, 104, 0.07),
+        0 18px 40px rgba(15, 35, 58, 0.20);
+}
+
+
+/* -----------------------------------------
+   INTRO
+   ----------------------------------------- */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen daun sederhana */
+.intro::before {
+    content: "❧";
+
+    position: absolute;
+
+    left: 7%;
+    top: 55%;
+
+    font-family: Georgia, serif;
+    font-size: 70px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(-15deg);
+}
+
+/* Ornamen kanan */
+.intro::after {
+    content: "❧";
+
+    position: absolute;
+
+    right: 7%;
+    top: 25%;
+
+    font-family: Georgia, serif;
+    font-size: 70px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(165deg);
+}
+
+
+/* -----------------------------------------
+   PROFILE
+   ----------------------------------------- */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen daun kiri */
+.profile::before {
+    content: "❧";
+
+    position: absolute;
+
+    left: 5%;
+    top: 18%;
+
+    font-family: Georgia, serif;
+    font-size: 85px;
+
+    color: rgba(180, 154, 104, 0.13);
+
+    transform: rotate(-25deg);
+
+    z-index: 0;
+}
+
+/* Ornamen daun kanan */
+.profile::after {
+    content: "❧";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 18%;
+
+    font-family: Georgia, serif;
+    font-size: 85px;
+
+    color: rgba(180, 154, 104, 0.13);
+
+    transform: rotate(155deg);
+
+    z-index: 0;
+}
+
+
+/* -----------------------------------------
+   FOTO UTAMA
+   ----------------------------------------- */
+
+.profile-large {
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.9),
+        0 0 0 7px #f8f5ee,
+        0 0 0 8px rgba(180, 154, 104, 0.55),
+        0 0 0 14px rgba(180, 154, 104, 0.06),
+        0 22px 45px rgba(15, 35, 58, 0.22);
+}
+
+
+/* -----------------------------------------
+   QUOTE
+   ----------------------------------------- */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pola titik */
+.quote::before {
+    content: "•  •  •";
+
+    position: absolute;
+
+    top: 22px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(180, 154, 104, 0.7);
+
+    font-size: 10px;
+    letter-spacing: 7px;
+}
+
+/* Garis bawah quote */
+.quote::after {
+    content: "──────── ✦ ────────";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(180, 154, 104, 0.55);
+
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+/* -----------------------------------------
+   EVENT
+   ----------------------------------------- */
+
+.event {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen floral kiri */
+.event::before {
+    content: "❦";
+
+    position: absolute;
+
+    left: 5%;
+    top: 30%;
+
+    font-family: Georgia, serif;
+    font-size: 75px;
+
+    color: rgba(180, 154, 104, 0.12);
+
+    transform: rotate(-20deg);
+}
+
+/* Ornamen floral kanan */
+.event::after {
+    content: "❦";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 20%;
+
+    font-family: Georgia, serif;
+    font-size: 75px;
+
+    color: rgba(180, 154, 104, 0.12);
+
+    transform: rotate(160deg);
+}
+
+
+/* -----------------------------------------
+   EVENT CARD
+   ----------------------------------------- */
+
+.event-card {
+    position: relative;
+
+    border: 1px solid rgba(180, 154, 104, 0.55);
+
+    box-shadow:
+        0 12px 35px rgba(15, 35, 58, 0.08),
+        0 0 0 5px rgba(180, 154, 104, 0.035);
+}
+
+/* Ornamen atas card */
+.event-card::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: -10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #f8f5ee;
+
+    padding: 0 12px;
+
+    color: #b49a68;
+
+    font-size: 13px;
+}
+
+
+/* -----------------------------------------
+   COUNTDOWN
+   ----------------------------------------- */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen sudut */
+.countdown-section::before {
+    content: "✦";
+
+    position: absolute;
+
+    left: 9%;
+    top: 20%;
+
+    color: rgba(180, 154, 104, 0.25);
+
+    font-size: 30px;
+}
+
+.countdown-section::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 9%;
+    bottom: 20%;
+
+    color: rgba(180, 154, 104, 0.25);
+
+    font-size: 30px;
+}
+
+
+/* -----------------------------------------
+   COUNTDOWN BOX
+   ----------------------------------------- */
+
+.count-box {
+    position: relative;
+
+    border: 1px solid rgba(180, 154, 104, 0.55);
+
+    box-shadow:
+        0 10px 25px rgba(15, 35, 58, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.count-box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(15, 35, 58, 0.13);
+}
+
+
+/* -----------------------------------------
+   LOCATION
+   ----------------------------------------- */
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Lingkaran dekorasi */
+.location::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border: 1px solid rgba(180, 154, 104, 0.13);
+
+    border-radius: 50%;
+
+    left: -130px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.location::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 10%;
+    top: 25%;
+
+    color: rgba(180, 154, 104, 0.25);
+
+    font-size: 28px;
+}
+
+
+/* -----------------------------------------
+   LOCATION BUTTON
+   ----------------------------------------- */
+
+.location-button {
+    position: relative;
+
+    border: 1px solid #b49a68;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.location-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 35, 58, 0.15);
+}
+
+
+/* -----------------------------------------
+   CLOSING
+   ----------------------------------------- */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen kiri bawah */
+.closing::before {
+    content: "❧";
+
+    position: absolute;
+
+    left: 8%;
+    bottom: 12%;
+
+    font-family: Georgia, serif;
+    font-size: 90px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(-25deg);
+}
+
+/* Ornamen kanan atas */
+.closing::after {
+    content: "❧";
+
+    position: absolute;
+
+    right: 8%;
+    top: 15%;
+
+    font-family: Georgia, serif;
+    font-size: 90px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(155deg);
+}
+
+
+/* Nama terakhir */
+.closing-name {
+    position: relative;
+
+    margin-top: 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    color: #b49a68;
+
+    letter-spacing: 3px;
+}
+
+.closing-name::before,
+.closing-name::after {
+    content: "✦";
+
+    margin: 0 12px;
+
+    font-size: 10px;
+
+    vertical-align: middle;
+
+    color: #b49a68;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .intro::before,
+    .intro::after {
+        font-size: 45px;
+    }
+
+    .profile::before,
+    .profile::after {
+        font-size: 55px;
+    }
+
+    .event::before,
+    .event::after {
+        font-size: 50px;
+    }
+
+    .closing::before,
+    .closing::after {
+        font-size: 55px;
+    }
+
+    .countdown-section::before {
+        left: 5%;
+    }
+
+    .countdown-section::after {
+        right: 5%;
+    }
+}
+/* =========================================
+   COVER AWAL - PREMIUM DECORATION
+   ========================================= */
+
+.cover {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* -----------------------------------------
+   ORNAMEN LINGKARAN BESAR
+   ----------------------------------------- */
+
+.cover::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(180, 154, 104, 0.18);
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+/* Lingkaran kedua */
+.cover::after {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(180, 154, 104, 0.10);
+    border-radius: 50%;
+
+    z-index: -2;
+}
+
+
+/* -----------------------------------------
+   ORNAMEN SUDUT KIRI ATAS
+   ----------------------------------------- */
+
+.cover-content::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: -80px;
+    left: -110px;
+
+    width: 190px;
+    height: 190px;
+
+    border: 1px solid rgba(180, 154, 104, 0.25);
+    border-radius: 50%;
+
+    color: #b49a68;
+
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 100px;
+    padding-left: 100px;
+
+    box-sizing: border-box;
+
+    z-index: -1;
+}
+
+
+/* -----------------------------------------
+   ORNAMEN SUDUT KANAN BAWAH
+   ----------------------------------------- */
+
+.cover-content::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: -110px;
+    bottom: -80px;
+
+    width: 190px;
+    height: 190px;
+
+    border: 1px solid rgba(180, 154, 104, 0.25);
+    border-radius: 50%;
+
+    color: #b49a68;
+
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 100px;
+    padding-bottom: 100px;
+
+    box-sizing: border-box;
+
+    z-index: -1;
+}
+
+
+/* -----------------------------------------
+   GARIS ORNAMEN DI ATAS FOTO
+   ----------------------------------------- */
+
+.cover-content > .profile-photo {
+    position: relative;
+}
+
+/* -----------------------------------------
+   AKSEN GOLD DI SEKITAR FOTO
+   ----------------------------------------- */
+
+.profile-photo {
+    box-shadow:
+        0 0 0 1px rgba(180, 154, 104, 0.9),
+        0 0 0 6px #f8f5ee,
+        0 0 0 7px rgba(180, 154, 104, 0.55),
+        0 0 0 13px rgba(180, 154, 104, 0.08),
+        0 20px 45px rgba(15, 35, 58, 0.20);
+}
+
+
+/* -----------------------------------------
+   LABEL
+   ----------------------------------------- */
+
+.cover .label {
+    position: relative;
+
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 8px 22px;
+
+    border-top: 1px solid rgba(180, 154, 104, 0.55);
+    border-bottom: 1px solid rgba(180, 154, 104, 0.55);
+
+    color: #b49a68;
+
+    letter-spacing: 4px;
+}
+
+
+/* -----------------------------------------
+   ORNAMEN DI BAWAH TANGGAL
+   ----------------------------------------- */
+
+.cover .date::before {
+    content: "✦  ───────  ✦";
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #b49a68;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.8;
+}
+
+
+/* -----------------------------------------
+   TOMBOL
+   ----------------------------------------- */
+
+.cover button {
+    position: relative;
+
+    margin-top: 28px;
+
+    border: 1px solid #b49a68;
+
+    box-shadow:
+        0 8px 20px rgba(15, 35, 58, 0.10);
+}
+
+
+/* -----------------------------------------
+   TITIK-TITIK DEKORASI
+   ----------------------------------------- */
+
+.cover {
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(180, 154, 104, 0.22) 1px,
+            transparent 1px
+        );
+
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+
+/* Tutup pola di tengah supaya tidak mengganggu */
+.cover-content {
+    position: relative;
+
+    padding: 35px 45px;
+
+    background: rgba(248, 245, 238, 0.82);
+
+    border: 1px solid rgba(180, 154, 104, 0.18);
+
+    box-shadow:
+        0 15px 45px rgba(15, 35, 58, 0.05);
+}
+
+
+/* -----------------------------------------
+   GARIS KECIL DI BAGIAN BAWAH COVER
+   ----------------------------------------- */
+
+.cover-content {
+    border-radius: 2px;
+}
+
+.cover-content::marker {
+    display: none;
+}
+
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cover::before {
+        width: 390px;
+        height: 390px;
+    }
+
+    .cover::after {
+        width: 320px;
+        height: 320px;
+    }
+
+    .cover-content {
+        padding: 25px 22px;
+        width: calc(100% - 35px);
+    }
+
+    .cover .label {
+        padding: 7px 15px;
+        letter-spacing: 3px;
+    }
+
+    .cover .date::before {
+        font-size: 8px;
+    }
+}
+/* =====================================================
+   🎓 GRADUATION CELEBRATION - FINAL DECORATION
+   Cream • Navy • Gold
+   ===================================================== */
+
+/* Warna dekorasi */
+:root {
+    --navy: #172f4d;
+    --cream: #f8f5ee;
+    --gold: #b49a68;
+    --gold-light: rgba(180, 154, 104, 0.18);
+}
+
+
+/* =====================================================
+   COVER — BAGIAN PALING MERIAH
+   ===================================================== */
+
+.cover {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(180, 154, 104, 0.16),
+            transparent 22%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(23, 47, 77, 0.10),
+            transparent 25%
+        ),
+        var(--cream);
+}
+
+
+/* Lingkaran dekorasi besar */
+.cover::before {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    border: 1px solid rgba(180, 154, 104, 0.16);
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -2;
+}
+
+
+/* Lingkaran kedua */
+.cover::after {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    border: 1px solid rgba(180, 154, 104, 0.10);
+    border-radius: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: -2;
+}
+
+
+/* =====================================================
+   CONFETTI SISI COVER
+   ===================================================== */
+
+.cover-content {
+    position: relative;
+    z-index: 5;
+}
+
+
+/* Confetti kiri */
+.cover-content::before {
+    content:
+        "✦"
+        "  •"
+        "  ✧"
+        "  •"
+        "  ✦"
+        "  •";
+
+    position: absolute;
+
+    left: -110px;
+    top: 5%;
+
+    width: 90px;
+
+    font-size: 15px;
+    line-height: 2.8;
+
+    letter-spacing: 10px;
+
+    color: var(--gold);
+
+    opacity: 0.65;
+
+    transform: rotate(-18deg);
+}
+
+
+/* Confetti kanan */
+.cover-content::after {
+    content:
+        "•  ✦"
+        "  •"
+        "  ✧"
+        "  •"
+        "  ✦"
+        "  •";
+
+    position: absolute;
+
+    right: -105px;
+    top: 12%;
+
+    width: 90px;
+
+    font-size: 15px;
+    line-height: 2.8;
+
+    letter-spacing: 9px;
+
+    color: var(--gold);
+
+    opacity: 0.65;
+
+    transform: rotate(18deg);
+}
+
+
+/* =====================================================
+   FOTO COVER — SEPERTI MEDALI WISUDA
+   ===================================================== */
+
+.profile-photo {
+    border: 5px solid var(--cream);
+
+    box-shadow:
+        0 0 0 1px var(--gold),
+        0 0 0 7px var(--cream),
+        0 0 0 8px rgba(180, 154, 104, 0.65),
+        0 0 0 14px rgba(180, 154, 104, 0.08),
+        0 20px 45px rgba(23, 47, 77, 0.20);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =====================================================
+   ORNAMEN TOPI WISUDA
+   ===================================================== */
+
+/* Simbol wisuda di atas label */
+.cover .label::before {
+    content: "🎓";
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 20px;
+
+    filter: grayscale(0.15);
+}
+
+
+/* =====================================================
+   LABEL UNDANGAN
+   ===================================================== */
+
+.cover .label {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 9px 24px;
+
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+
+    letter-spacing: 4px;
+
+    color: var(--gold);
+}
+
+
+/* =====================================================
+   JUDUL
+   ===================================================== */
+
+.cover h1 {
+    position: relative;
+
+    margin-top: 15px;
+
+    color: var(--navy);
+
+    text-shadow:
+        0 2px 10px rgba(23, 47, 77, 0.06);
+}
+
+
+/* Hiasan kecil di bawah judul */
+.cover h1::after {
+    content: "✦  ───  ✦  ───  ✦";
+
+    display: block;
+
+    margin-top: 18px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: var(--gold);
+
+    opacity: 0.8;
+}
+
+
+/* =====================================================
+   NAMA ALHADI
+   ===================================================== */
+
+.cover .name {
+    position: relative;
+
+    color: var(--navy);
+
+    letter-spacing: 3px;
+}
+
+.cover .name::before,
+.cover .name::after {
+    content: "❦";
+
+    margin: 0 13px;
+
+    font-family: Georgia, serif;
+
+    color: var(--gold);
+
+    font-size: 15px;
+
+    vertical-align: middle;
+}
+
+
+/* =====================================================
+   TANGGAL
+   ===================================================== */
+
+.cover .date {
+    position: relative;
+
+    color: #5d5d5d;
+}
+
+.cover .date::before {
+    content: "A DAY TO CELEBRATE";
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: var(--gold);
+}
+
+
+/* =====================================================
+   TOMBOL
+   ===================================================== */
+
+.cover button {
+    border: 1px solid var(--gold);
+
+    box-shadow:
+        0 8px 22px rgba(23, 47, 77, 0.14);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.cover button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 28px rgba(23, 47, 77, 0.20);
+}
+
+
+/* =====================================================
+   INTRO — SUASANA BAHAGIA
+   ===================================================== */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 50%,
+            rgba(180, 154, 104, 0.09),
+            transparent 20%
+        ),
+        radial-gradient(
+            circle at 90% 50%,
+            rgba(180, 154, 104, 0.09),
+            transparent 20%
+        );
+}
+
+
+/* Floral kiri */
+.intro::before {
+    content: "❧  ✦";
+
+    position: absolute;
+
+    left: 4%;
+    top: 35%;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    color: rgba(180, 154, 104, 0.20);
+
+    transform: rotate(-20deg);
+}
+
+
+/* Floral kanan */
+.intro::after {
+    content: "✦  ❧";
+
+    position: absolute;
+
+    right: 4%;
+    top: 55%;
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    color: rgba(180, 154, 104, 0.20);
+
+    transform: rotate(160deg);
+}
+
+
+/* =====================================================
+   PROFILE — FOKUS WISUDAWAN
+   ===================================================== */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Lingkaran dekoratif belakang */
+.profile::before {
+    content: "";
+
+    position: absolute;
+
+    width: 390px;
+    height: 390px;
+
+    border: 1px solid rgba(180, 154, 104, 0.16);
+
+    border-radius: 50%;
+
+    left: 50%;
+    top: 48%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* Bintang kecil */
+.profile::after {
+    content: "✦     ✧     ✦";
+
+    position: absolute;
+
+    bottom: 10%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 11px;
+
+    letter-spacing: 12px;
+
+    color: rgba(180, 154, 104, 0.45);
+}
+
+
+/* Foto utama */
+.profile-large {
+    position: relative;
+    z-index: 2;
+
+    box-shadow:
+        0 0 0 1px var(--gold),
+        0 0 0 7px var(--cream),
+        0 0 0 8px rgba(180, 154, 104, 0.60),
+        0 0 0 15px rgba(180, 154, 104, 0.07),
+        0 22px 45px rgba(23, 47, 77, 0.22);
+}
+
+
+/* =====================================================
+   QUOTE — MOMEN EMOSIONAL
+   ===================================================== */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Kutipan besar */
+.quote::before {
+    content: "“";
+
+    position: absolute;
+
+    left: 7%;
+    top: -10px;
+
+    font-family: Georgia, serif;
+
+    font-size: 100px;
+
+    color: rgba(180, 154, 104, 0.18);
+}
+
+
+/* Sparkle kanan */
+.quote::after {
+    content: "✦  ✧  ✦";
+
+    position: absolute;
+
+    right: 7%;
+    bottom: 20px;
+
+    font-size: 14px;
+
+    letter-spacing: 8px;
+
+    color: rgba(180, 154, 104, 0.45);
+}
+
+
+/* =====================================================
+   EVENT — CELEBRATION CARD
+   ===================================================== */
+
+.event {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Ornamen samping */
+.event::before {
+    content: "❧";
+
+    position: absolute;
+
+    left: 5%;
+    top: 35%;
+
+    font-family: Georgia, serif;
+
+    font-size: 75px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(-25deg);
+}
+
+
+/* Ornamen kanan */
+.event::after {
+    content: "❧";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 25%;
+
+    font-family: Georgia, serif;
+
+    font-size: 75px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(155deg);
+}
+
+
+/* Card acara */
+.event-card {
+    position: relative;
+
+    border: 1px solid rgba(180, 154, 104, 0.55);
+
+    box-shadow:
+        0 15px 35px rgba(23, 47, 77, 0.08);
+}
+
+
+/* Dekorasi atas card */
+.event-card::before {
+    content: "🎓  ✦  CELEBRATION  ✦  🎓";
+
+    position: absolute;
+
+    top: -12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 3px 15px;
+
+    background: var(--cream);
+
+    color: var(--gold);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   COUNTDOWN — ANTISIPASI HARI BAHAGIA
+   ===================================================== */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Confetti */
+.countdown-section::before {
+    content: "✦   •   ✧   •   ✦";
+
+    position: absolute;
+
+    left: 7%;
+    top: 18%;
+
+    font-size: 13px;
+
+    letter-spacing: 8px;
+
+    color: rgba(180, 154, 104, 0.35);
+
+    transform: rotate(-15deg);
+}
+
+
+.countdown-section::after {
+    content: "✧   •   ✦   •   ✧";
+
+    position: absolute;
+
+    right: 7%;
+    bottom: 18%;
+
+    font-size: 13px;
+
+    letter-spacing: 8px;
+
+    color: rgba(180, 154, 104, 0.35);
+
+    transform: rotate(15deg);
+}
+
+
+/* Countdown box */
+.count-box {
+    border: 1px solid rgba(180, 154, 104, 0.60);
+
+    box-shadow:
+        0 10px 25px rgba(23, 47, 77, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.count-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 16px 30px rgba(23, 47, 77, 0.14);
+}
+
+
+/* =====================================================
+   LOCATION
+   ===================================================== */
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Pin dekoratif */
+.location::before {
+    content: "✦  LOCATION  ✦";
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(180, 154, 104, 0.65);
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+}
+
+
+/* Ornamen kanan */
+.location::after {
+    content: "❧";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 15%;
+
+    font-family: Georgia, serif;
+
+    font-size: 75px;
+
+    color: rgba(180, 154, 104, 0.14);
+
+    transform: rotate(150deg);
+}
+
+
+/* =====================================================
+   CLOSING — PERAYAAN TERAKHIR
+   ===================================================== */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(180, 154, 104, 0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(180, 154, 104, 0.10),
+            transparent 25%
+        );
+}
+
+
+/* Ornamen bunga */
+.closing::before {
+    content: "❦";
+
+    position: absolute;
+
+    left: 8%;
+    top: 20%;
+
+    font-family: Georgia, serif;
+
+    font-size: 90px;
+
+    color: rgba(180, 154, 104, 0.16);
+
+    transform: rotate(-25deg);
+}
+
+
+/* Confetti kanan */
+.closing::after {
+    content: "✦   ✧   •   ✦";
+
+    position: absolute;
+
+    right: 7%;
+    bottom: 20%;
+
+    font-size: 15px;
+
+    letter-spacing: 7px;
+
+    color: rgba(180, 154, 104, 0.35);
+
+    transform: rotate(15deg);
+}
+
+
+/* Nama Alhadi */
+.closing-name {
+    position: relative;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: var(--gold);
+
+    letter-spacing: 4px;
+
+    margin-top: 28px;
+}
+
+
+/* Ornamen nama */
+.closing-name::before,
+.closing-name::after {
+    content: "✦";
+
+    margin: 0 14px;
+
+    font-size: 10px;
+
+    vertical-align: middle;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .cover::before {
+        width: 430px;
+        height: 430px;
+    }
+
+    .cover::after {
+        width: 350px;
+        height: 350px;
+    }
+
+    .cover-content::before,
+    .cover-content::after {
+        font-size: 11px;
+        width: 65px;
+    }
+
+    .profile::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .event-card::before {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .countdown-section::before,
+    .countdown-section::after {
+        font-size: 9px;
+        letter-spacing: 5px;
+    }
+
+    .closing::before {
+        font-size: 55px;
+    }
+
+    .closing::after {
+        font-size: 10px;
+    }
+}
+/* =====================================================
+   🎓🎉 EXTRA HEBOH — GRADUATION PARTY
+   ===================================================== */
+
+/* -----------------------------------------
+   SEMUA SECTION
+----------------------------------------- */
+
+.intro,
+.profile,
+.quote,
+.event,
+.countdown-section,
+.location,
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* -----------------------------------------
+   CONFETTI GLOBAL
+----------------------------------------- */
+
+.intro::before,
+.profile::before,
+.event::before,
+.countdown-section::before,
+.location::before,
+.closing::before {
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   INTRO — CONFETTI RAMAI
+----------------------------------------- */
+
+.intro {
+    background:
+        radial-gradient(circle at 5% 10%, rgba(180,154,104,.18) 0 4px, transparent 5px),
+        radial-gradient(circle at 95% 20%, rgba(180,154,104,.15) 0 5px, transparent 6px),
+        radial-gradient(circle at 10% 85%, rgba(23,47,77,.10) 0 4px, transparent 5px),
+        radial-gradient(circle at 90% 80%, rgba(180,154,104,.18) 0 4px, transparent 5px),
+        var(--cream);
+}
+
+.intro::before {
+    content: "✦  ✧  •  ✦  •  ✧  ✦";
+
+    position: absolute;
+    top: 12%;
+    left: 4%;
+
+    font-size: 16px;
+    letter-spacing: 8px;
+
+    color: var(--gold);
+
+    transform: rotate(-18deg);
+    opacity: .7;
+}
+
+.intro::after {
+    content: "✧  •  ✦  •  ✧  ✦  •";
+
+    position: absolute;
+    right: 3%;
+    bottom: 12%;
+
+    font-size: 16px;
+    letter-spacing: 8px;
+
+    color: var(--gold);
+
+    transform: rotate(18deg);
+    opacity: .7;
+}
+
+
+/* -----------------------------------------
+   PROFILE — FOTO JADI CENTERPIECE
+----------------------------------------- */
+
+.profile {
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(180,154,104,.16),
+            transparent 35%
+        ),
+        var(--cream);
+}
+
+.profile::before {
+    content: "✦       ✧       ✦";
+
+    position: absolute;
+
+    top: 8%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 18px;
+    letter-spacing: 16px;
+
+    color: var(--gold);
+
+    opacity: .7;
+}
+
+.profile::after {
+    content: "🎓";
+
+    position: absolute;
+
+    right: 8%;
+    top: 12%;
+
+    font-size: 38px;
+
+    transform: rotate(12deg);
+
+    opacity: .20;
+}
+
+
+/* Foto lebih mewah */
+
+.profile-large {
+    position: relative;
+
+    border: 6px solid var(--cream);
+
+    box-shadow:
+        0 0 0 2px var(--gold),
+        0 0 0 9px var(--cream),
+        0 0 0 11px rgba(180,154,104,.6),
+        0 0 0 18px rgba(180,154,104,.12),
+        0 25px 55px rgba(23,47,77,.25);
+
+    animation: photoFloat 4s ease-in-out infinite;
+}
+
+@keyframes photoFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
+/* -----------------------------------------
+   QUOTE — DARK PARTY
+----------------------------------------- */
+
+.quote {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(180,154,104,.18), transparent 18%),
+        radial-gradient(circle at 90% 80%, rgba(180,154,104,.16), transparent 20%),
+        var(--navy);
+
+    border-top: 1px solid rgba(180,154,104,.5);
+    border-bottom: 1px solid rgba(180,154,104,.5);
+}
+
+.quote::before {
+    content: "✦  ✧  ✦  ✧  ✦";
+
+    position: absolute;
+
+    top: 15%;
+    left: 5%;
+
+    font-size: 15px;
+    letter-spacing: 9px;
+
+    color: var(--gold);
+
+    transform: rotate(-15deg);
+
+    opacity: .65;
+}
+
+.quote::after {
+    content: "✧  ✦  ✧  ✦  ✧";
+
+    position: absolute;
+
+    bottom: 15%;
+    right: 5%;
+
+    font-size: 15px;
+    letter-spacing: 9px;
+
+    color: var(--gold);
+
+    transform: rotate(15deg);
+
+    opacity: .65;
+}
+
+
+/* -----------------------------------------
+   EVENT — CARD LEBIH "WOW"
+----------------------------------------- */
+
+.event {
+    background:
+        radial-gradient(circle at 0 0, rgba(180,154,104,.15), transparent 20%),
+        radial-gradient(circle at 100% 100%, rgba(180,154,104,.15), transparent 20%),
+        var(--cream);
+}
+
+.event-card {
+    position: relative;
+
+    border: 2px solid var(--gold);
+
+    box-shadow:
+        0 20px 45px rgba(23,47,77,.13),
+        inset 0 0 0 6px rgba(180,154,104,.07);
+
+    background: rgba(255,255,255,.55);
+}
+
+
+/* pita dekoratif */
+
+.event-card::before {
+    content: "🎓  GRADUATION DAY  🎓";
+
+    position: absolute;
+
+    left: 50%;
+    top: -18px;
+
+    transform: translateX(-50%);
+
+    padding: 8px 22px;
+
+    background: var(--navy);
+
+    color: #fff;
+
+    border: 1px solid var(--gold);
+
+    font-size: 9px;
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+
+    box-shadow: 0 8px 20px rgba(23,47,77,.18);
+}
+
+
+/* -----------------------------------------
+   COUNTDOWN — PALING CELEBRATORY
+----------------------------------------- */
+
+.countdown-section {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(180,154,104,.20), transparent 20%),
+        radial-gradient(circle at 85% 80%, rgba(180,154,104,.20), transparent 20%),
+        var(--navy);
+}
+
+.countdown-section::before {
+    content:
+        "✦   •   ✧   •   ✦   •   ✧   •   ✦";
+
+    position: absolute;
+
+    top: 10%;
+    left: 3%;
+
+    font-size: 15px;
+    letter-spacing: 8px;
+
+    color: var(--gold);
+
+    transform: rotate(-12deg);
+
+    opacity: .7;
+}
+
+.countdown-section::after {
+    content:
+        "✧   •   ✦   •   ✧   •   ✦   •   ✧";
+
+    position: absolute;
+
+    bottom: 10%;
+    right: 3%;
+
+    font-size: 15px;
+    letter-spacing: 8px;
+
+    color: var(--gold);
+
+    transform: rotate(12deg);
+
+    opacity: .7;
+}
+
+
+/* Countdown box */
+
+.count-box {
+    position: relative;
+
+    border: 1px solid var(--gold);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.08),
+            rgba(255,255,255,.02)
+        );
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.18);
+
+    transition: .35s ease;
+}
+
+.count-box::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: -12px;
+    left: -8px;
+
+    color: var(--gold);
+
+    font-size: 17px;
+}
+
+.count-box::after {
+    content: "✦";
+
+    position: absolute;
+
+    bottom: -10px;
+    right: -7px;
+
+    color: var(--gold);
+
+    font-size: 15px;
+}
+
+.count-box:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,.25);
+}
+
+
+/* -----------------------------------------
+   LOCATION — ORNAMEN SUDUT
+----------------------------------------- */
+
+.location {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(180,154,104,.16), transparent 20%),
+        radial-gradient(circle at 90% 85%, rgba(180,154,104,.16), transparent 20%),
+        var(--cream);
+}
+
+.location::before {
+    content: "✦";
+
+    position: absolute;
+
+    top: 12%;
+    left: 8%;
+
+    font-size: 42px;
+
+    color: rgba(180,154,104,.35);
+
+    transform: rotate(15deg);
+}
+
+.location::after {
+    content: "✦";
+
+    position: absolute;
+
+    bottom: 15%;
+    right: 8%;
+
+    font-size: 42px;
+
+    color: rgba(180,154,104,.35);
+
+    transform: rotate(-15deg);
+}
+
+
+/* Tombol lokasi */
+
+.location-button {
+    position: relative;
+
+    border: 1px solid var(--gold);
+
+    box-shadow:
+        0 10px 25px rgba(23,47,77,.12);
+
+    transition: .3s ease;
+}
+
+.location-button::before {
+    content: "✦";
+
+    margin-right: 8px;
+
+    color: var(--gold);
+}
+
+.location-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(23,47,77,.18);
+}
+
+
+/* -----------------------------------------
+   CLOSING — FINAL PARTY
+----------------------------------------- */
+
+.closing {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(180,154,104,.20), transparent 22%),
+        radial-gradient(circle at 90% 80%, rgba(180,154,104,.20), transparent 22%),
+        var(--navy);
+}
+
+
+/* Confetti kiri */
+.closing::before {
+    content:
+        "✦   •   ✧"
+        "\A"
+        "•   ✦   •"
+        "\A"
+        "✧   •   ✦";
+
+    white-space: pre;
+
+    position: absolute;
+
+    left: 5%;
+    top: 20%;
+
+    font-size: 16px;
+
+    line-height: 2.5;
+
+    color: var(--gold);
+
+    transform: rotate(-15deg);
+
+    opacity: .65;
+}
+
+
+/* Confetti kanan */
+.closing::after {
+    content:
+        "✧   •   ✦"
+        "\A"
+        "✦   •   ✧"
+        "\A"
+        "•   ✦   •";
+
+    white-space: pre;
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 20%;
+
+    font-size: 16px;
+
+    line-height: 2.5;
+
+    color: var(--gold);
+
+    transform: rotate(15deg);
+
+    opacity: .65;
+}
+
+
+/* Nama terakhir */
+
+.closing-name {
+    display: inline-block;
+
+    position: relative;
+
+    padding: 12px 30px;
+
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    letter-spacing: 5px;
+}
+
+.closing-name::before,
+.closing-name::after {
+    content: "✦";
+
+    margin: 0 15px;
+
+    color: var(--gold);
+}
+
+
+/* -----------------------------------------
+   ANIMASI SPARKLE
+----------------------------------------- */
+
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: .35;
+        transform: scale(.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.cover .label::before,
+.count-box::before,
+.count-box::after {
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+
+/* -----------------------------------------
+   MOBILE
+----------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .cover-content::before,
+    .cover-content::after {
+        display: none;
+    }
+
+    .intro::before,
+    .intro::after {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .event-card::before {
+        font-size: 7px;
+        padding: 7px 12px;
+        letter-spacing: 1px;
+    }
+
+    .closing::before,
+    .closing::after {
+        font-size: 11px;
+    }
+
+}
+/* =====================================================
+   🎓🎉 GRADUATION CELEBRATION — LEBIH HEBOH
+   ===================================================== */
+
+/* CONFETTI DI SELURUH HALAMAN */
+body {
+    overflow-x: hidden;
+}
+
+/* Ornamen wisuda di cover */
+.cover-content::before {
+    content: "🎓";
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 55px;
+    transform: rotate(-15deg);
+    animation: graduationFloat 3s ease-in-out infinite;
+}
+
+.cover-content::after {
+    content: "✦  ✧  ✦";
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    color: #c8a96b;
+    font-size: 28px;
+    letter-spacing: 8px;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Foto wisudawan lebih menonjol */
+.profile-photo {
+    position: relative;
+    z-index: 3;
+    border: 6px solid #fffdf8;
+    box-shadow:
+        0 0 0 2px #c8a96b,
+        0 0 0 9px #fffdf8,
+        0 0 0 11px rgba(200, 169, 107, 0.6),
+        0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Badge di atas foto */
+.cover-content {
+    position: relative;
+}
+
+.cover-content .profile-photo {
+    margin-bottom: 18px;
+}
+
+/* Efek lingkaran emas di belakang foto */
+.cover-content .profile-photo::before {
+    content: "";
+}
+
+/* Nama wisudawan lebih meriah */
+.cover .name {
+    position: relative;
+    display: inline-block;
+    font-size: 34px;
+    font-weight: bold;
+    color: #c8a96b;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+/* Ornamen di sekitar nama */
+.cover .name::before {
+    content: "✦";
+    position: absolute;
+    left: -45px;
+    top: 5px;
+    color: #c8a96b;
+    font-size: 22px;
+    animation: sparkle 1.8s infinite;
+}
+
+.cover .name::after {
+    content: "✦";
+    position: absolute;
+    right: -45px;
+    top: 5px;
+    color: #c8a96b;
+    font-size: 22px;
+    animation: sparkle 1.8s infinite reverse;
+}
+
+
+/* =====================================================
+   🎓 INTRO
+   ===================================================== */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: "🎓";
+    position: absolute;
+    left: 8%;
+    top: 35px;
+    font-size: 45px;
+    transform: rotate(-12deg);
+    animation: graduationFloat 3s infinite;
+}
+
+.intro::after {
+    content: "✦  ✧  ✦  ✧  ✦";
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+    color: #c8a96b;
+    font-size: 22px;
+    letter-spacing: 5px;
+    animation: sparkle 2s infinite;
+}
+
+
+/* =====================================================
+   📸 FOTO UTAMA WISUDA
+   ===================================================== */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile::before {
+    content: "🎓";
+    position: absolute;
+    top: 25px;
+    left: 8%;
+    font-size: 42px;
+    transform: rotate(-15deg);
+    animation: graduationFloat 3s ease-in-out infinite;
+}
+
+.profile::after {
+    content: "✦  ✧  ✦";
+    position: absolute;
+    top: 35px;
+    right: 8%;
+    color: #c8a96b;
+    font-size: 25px;
+    letter-spacing: 7px;
+    animation: sparkle 2s infinite;
+}
+
+/* Foto lebih premium */
+.profile-large {
+    position: relative;
+    z-index: 2;
+
+    border: 6px solid #fffdf8;
+
+    box-shadow:
+        0 0 0 2px #c8a96b,
+        0 0 0 10px #fffdf8,
+        0 0 0 12px rgba(200, 169, 107, 0.65),
+        0 25px 55px rgba(15, 35, 58, 0.25);
+
+    transition: transform 0.4s ease;
+}
+
+.profile-large:hover {
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   🎉 QUOTE — NUANSA PERAYAAN
+   ===================================================== */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: 7%;
+    top: 5px;
+    font-family: Georgia, serif;
+    font-size: 110px;
+    color: rgba(200, 169, 107, 0.25);
+}
+
+.quote::after {
+    content: "🎓  ✦  🎉  ✦  🎓";
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    white-space: nowrap;
+    animation: sparkle 2s infinite;
+}
+
+
+/* =====================================================
+   🎓 DETAIL ACARA
+   ===================================================== */
+
+.event {
+    position: relative;
+    overflow: hidden;
+}
+
+.event::before {
+    content: "GRADUATION DAY";
+    position: absolute;
+    top: 25px;
+    right: -35px;
+    padding: 8px 45px;
+    background: #c8a96b;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transform: rotate(8deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.event-card {
+    position: relative;
+}
+
+.event-card::before {
+    content: "🎓";
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    font-size: 50px;
+    transform: rotate(12deg);
+    z-index: 5;
+}
+
+
+/* =====================================================
+   ⏳ COUNTDOWN
+   ===================================================== */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.countdown-section::before {
+    content: "🎓";
+    position: absolute;
+    left: 5%;
+    top: 35px;
+    font-size: 45px;
+    animation: graduationFloat 3s infinite;
+}
+
+.countdown-section::after {
+    content: "✦  ✦  ✦";
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+    color: #c8a96b;
+    font-size: 25px;
+    letter-spacing: 8px;
+    animation: sparkle 2s infinite;
+}
+
+.count-box {
+    position: relative;
+    overflow: visible;
+}
+
+.count-box::before {
+    content: "✦";
+    position: absolute;
+    top: -18px;
+    right: -10px;
+    color: #c8a96b;
+    font-size: 18px;
+    animation: sparkle 1.5s infinite;
+}
+
+
+/* =====================================================
+   📍 LOKASI
+   ===================================================== */
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+.location::before {
+    content: "🎉";
+    position: absolute;
+    top: 30px;
+    left: 7%;
+    font-size: 40px;
+    transform: rotate(-10deg);
+}
+
+.location::after {
+    content: "🎓";
+    position: absolute;
+    right: 7%;
+    bottom: 25px;
+    font-size: 45px;
+    transform: rotate(12deg);
+    animation: graduationFloat 3s infinite;
+}
+
+
+/* =====================================================
+   🎊 PENUTUP
+   ===================================================== */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+.closing::before {
+    content: "🎓  ✦  🎉  ✦  🎓";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    white-space: nowrap;
+    letter-spacing: 6px;
+    animation: sparkle 2s infinite;
+}
+
+.closing::after {
+    
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c8a96b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+/* =====================================================
+   ✨ ANIMASI
+   ===================================================== */
+
+@keyframes graduationFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(8deg);
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+
+/* =====================================================
+   📱 MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .cover-content::before {
+        left: 15px;
+        top: 20px;
+        font-size: 38px;
+    }
+
+    .cover-content::after {
+        right: 10px;
+        top: 45px;
+        font-size: 18px;
+    }
+
+    .cover .name {
+        font-size: 28px;
+    }
+
+    .cover .name::before {
+        left: -30px;
+    }
+
+    .cover .name::after {
+        right: -30px;
+    }
+
+    .profile::before {
+        left: 4%;
+        font-size: 32px;
+    }
+
+    .profile::after {
+        right: 4%;
+        font-size: 18px;
+    }
+
+    .event::before {
+        font-size: 8px;
+        right: -45px;
+    }
+
+    .closing::before {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .closing::after {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+}
+/* =====================================================
+   🎓 ELEGANT GRADUATION — RAMAI TAPI TIDAK ALAY
+   ===================================================== */
+
+:root {
+    --navy: #102a43;
+    --cream: #f8f5ee;
+    --gold: #c8a96b;
+    --soft-gold: rgba(200, 169, 107, 0.35);
+}
+
+
+/* ===============================
+   COVER
+   =============================== */
+
+.cover {
+    position: relative;
+    overflow: hidden;
+}
+
+/* cahaya lembut */
+.cover::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(200, 169, 107, 0.14),
+        transparent 68%
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* garis dekorasi elegan */
+.cover::after {
+    content: "✦";
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    color: var(--gold);
+    font-size: 22px;
+    opacity: .7;
+    animation: softSparkle 3s infinite;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ===============================
+   ORNAMEN ATAS
+   =============================== */
+
+.cover-content::before {
+    content: "GRADUATION DAY";
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cover-content::after {
+    content: "✦  ·  ✦";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--gold);
+    letter-spacing: 8px;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   FOTO COVER
+   =============================== */
+
+.profile-photo {
+    position: relative;
+    z-index: 3;
+
+    border: 5px solid var(--cream);
+
+    box-shadow:
+        0 0 0 1px var(--gold),
+        0 0 0 7px var(--cream),
+        0 0 0 8px var(--soft-gold),
+        0 18px 40px rgba(16, 42, 67, .22);
+}
+
+
+/* ===============================
+   NAMA
+   =============================== */
+
+.cover .name {
+    position: relative;
+    display: inline-block;
+    color: var(--gold);
+    letter-spacing: 3px;
+}
+
+.cover .name::before {
+    content: "—";
+    position: absolute;
+    left: -45px;
+    color: var(--gold);
+}
+
+.cover .name::after {
+    content: "—";
+    position: absolute;
+    right: -45px;
+    color: var(--gold);
+}
+
+
+/* ===============================
+   LABEL
+   =============================== */
+
+.cover .label {
+    letter-spacing: 5px;
+    font-size: 11px;
+    color: var(--gold);
+}
+
+
+/* ===============================
+   TOMBOL
+   =============================== */
+
+.cover button {
+    position: relative;
+    transition: all .3s ease;
+}
+
+.cover button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 10px 25px rgba(16, 42, 67, .25);
+}
+
+
+/* ===============================
+   INTRO
+   =============================== */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: "✦";
+    position: absolute;
+    top: 35px;
+    left: 12%;
+    color: var(--gold);
+    font-size: 20px;
+    opacity: .65;
+}
+
+.intro::after {
+    content: "✦";
+    position: absolute;
+    bottom: 35px;
+    right: 12%;
+    color: var(--gold);
+    font-size: 20px;
+    opacity: .65;
+}
+
+
+/* ===============================
+   PROFILE
+   =============================== */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border: 1px solid rgba(200,169,107,.28);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile::after {
+    content: "✦";
+    position: absolute;
+    top: 30px;
+    right: 15%;
+    color: var(--gold);
+    font-size: 20px;
+}
+
+
+/* FOTO UTAMA */
+
+.profile-large {
+    position: relative;
+    z-index: 2;
+
+    border: 5px solid var(--cream);
+
+    box-shadow:
+        0 0 0 1px var(--gold),
+        0 0 0 8px var(--cream),
+        0 0 0 9px var(--soft-gold),
+        0 22px 45px rgba(16,42,67,.22);
+}
+
+
+/* ===============================
+   QUOTE
+   =============================== */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: 8%;
+    top: 0;
+    font-family: Georgia, serif;
+    font-size: 100px;
+    color: rgba(200,169,107,.18);
+}
+
+
+/* ===============================
+   DETAIL ACARA
+   =============================== */
+
+.event {
+    position: relative;
+}
+
+.event::before {
+    content: "GRADUATION DAY";
+    position: absolute;
+    top: 30px;
+    right: 7%;
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.event-card {
+    border: 1px solid rgba(200,169,107,.45);
+    box-shadow:
+        0 15px 35px rgba(16,42,67,.08);
+}
+
+
+/* ===============================
+   COUNTDOWN
+   =============================== */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.countdown-section::before {
+    content: "COUNTDOWN";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(200,169,107,.5);
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.count-box {
+    border: 1px solid var(--gold);
+    transition: .3s ease;
+}
+
+.count-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(16,42,67,.15);
+}
+
+
+/* ===============================
+   LOCATION
+   =============================== */
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+.location::before {
+    content: "✦";
+    position: absolute;
+    top: 35px;
+    left: 12%;
+    color: var(--gold);
+    font-size: 20px;
+}
+
+.location::after {
+    content: "✦";
+    position: absolute;
+    bottom: 35px;
+    right: 12%;
+    color: var(--gold);
+    font-size: 20px;
+}
+
+
+/* ===============================
+   CLOSING
+   =============================== */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+.closing::before {
+    content: "✦  ✦  ✦";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--gold);
+    font-size: 14px;
+    letter-spacing: 8px;
+}
+
+.closing h2 {
+    color: var(--gold);
+}
+
+
+/* ===============================
+   SPARKLE HALUS
+   =============================== */
+
+@keyframes softSparkle {
+
+    0%, 100% {
+        opacity: .35;
+        transform: scale(.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 600px) {
+
+    .cover-content::before {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .cover .name::before {
+        left: -30px;
+    }
+
+    .cover .name::after {
+        right: -30px;
+    }
+
+    .event::before {
+        font-size: 7px;
+        right: 5%;
+    }
+
+    .profile::before {
+        width: 270px;
+        height: 270px;
+    }
+}
+/* =========================================================
+   🎓 LUXURY GRADUATION CELEBRATION
+   HEBOH - MAHASISWA WISUDA - TAPI TETAP ELEGAN
+   ========================================================= */
+
+/* =========================
+   BACKGROUND CELEBRATION
+   ========================= */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Cahaya lembut seluruh halaman */
+body::after {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(200, 169, 107, 0.08),
+        transparent 70%
+    );
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* =========================
+   COVER
+   ========================= */
+
+.cover {
+    position: relative;
+    overflow: hidden;
+}
+
+/* tulisan besar transparan */
+.cover::before {
+    content: "2026";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, serif;
+    font-size: 180px;
+    font-weight: bold;
+    color: rgba(200, 169, 107, 0.045);
+    letter-spacing: 15px;
+    white-space: nowrap;
+}
+
+/* dekorasi sudut */
+.cover::after {
+    content: "✦";
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    color: #c8a96b;
+    font-size: 24px;
+    animation: goldSparkle 2.5s infinite;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 5;
+}
+
+/* tulisan CLASS OF 2026 */
+.cover-content::before {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c8a96b;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    white-space: nowrap;
+}
+
+/* ornamen kecil */
+.cover-content::after {
+    content: "✦  ·  ✦  ·  ✦";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c8a96b;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   FOTO COVER
+   ========================= */
+
+.profile-photo {
+    position: relative;
+    z-index: 10;
+
+    border: 6px solid #fffdf8;
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 8px #fffdf8,
+        0 0 0 9px rgba(200,169,107,.7),
+        0 0 35px rgba(200,169,107,.28),
+        0 25px 55px rgba(15,35,58,.30);
+
+    animation: photoLuxury 4s ease-in-out infinite;
+}
+
+@keyframes photoLuxury {
+
+    0%, 100% {
+        box-shadow:
+            0 0 0 1px #c8a96b,
+            0 0 0 8px #fffdf8,
+            0 0 0 9px rgba(200,169,107,.7),
+            0 0 25px rgba(200,169,107,.2),
+            0 25px 55px rgba(15,35,58,.30);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 1px #c8a96b,
+            0 0 0 8px #fffdf8,
+            0 0 0 9px rgba(200,169,107,.8),
+            0 0 45px rgba(200,169,107,.4),
+            0 25px 55px rgba(15,35,58,.30);
+    }
+}
+
+
+/* =========================
+   NAMA ALHADI
+   ========================= */
+
+.cover .name {
+    position: relative;
+    display: inline-block;
+    color: #c8a96b;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* garis mewah kiri kanan */
+.cover .name::before {
+    content: "—  ✦";
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c8a96b;
+    font-size: 15px;
+}
+
+.cover .name::after {
+    content: "✦  —";
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c8a96b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   LABEL
+   ========================= */
+
+.cover .label {
+    color: #c8a96b;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TOMBOL
+   ========================= */
+
+.cover button {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.cover button:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 30px rgba(16,42,67,.3),
+        0 0 20px rgba(200,169,107,.2);
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* angka tahun besar */
+.intro::before {
+    content: "2026";
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    font-family: Georgia, serif;
+    font-size: 130px;
+    font-weight: bold;
+    color: rgba(200,169,107,.06);
+}
+
+/* sparkle */
+.intro::after {
+    content: "✦";
+    position: absolute;
+    left: 10%;
+    bottom: 30px;
+    color: #c8a96b;
+    font-size: 22px;
+    animation: goldSparkle 2s infinite;
+}
+
+
+/* =========================
+   PROFILE SECTION
+   ========================= */
+
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+/* lingkaran dekoratif */
+.profile::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* sparkle kanan */
+.profile::after {
+    content: "✦   ✧   ✦";
+    position: absolute;
+    right: 8%;
+    top: 35px;
+    color: #c8a96b;
+    font-size: 18px;
+    letter-spacing: 7px;
+    animation: goldSparkle 3s infinite;
+}
+
+
+/* FOTO BESAR */
+
+.profile-large {
+    position: relative;
+    z-index: 5;
+
+    border: 6px solid #fffdf8;
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 9px #fffdf8,
+        0 0 0 10px rgba(200,169,107,.65),
+        0 25px 60px rgba(15,35,58,.28);
+
+    transition: .4s ease;
+}
+
+.profile-large:hover {
+    transform: scale(1.025);
+}
+
+
+/* =========================
+   PROFIL NAMA
+   ========================= */
+
+.profile h2 {
+    position: relative;
+    z-index: 5;
+}
+
+.profile h2::after {
+    content: "✦";
+    color: #c8a96b;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+
+/* =========================
+   QUOTE
+   ========================= */
+
+.quote {
+    position: relative;
+    overflow: hidden;
+}
+
+/* quote besar */
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: 8%;
+    top: -15px;
+    font-family: Georgia, serif;
+    font-size: 120px;
+    color: rgba(200,169,107,.15);
+}
+
+/* ornamen bawah */
+.quote::after {
+    content: "✦  ─────────  ✦";
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(200,169,107,.6);
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+
+/* =========================
+   EVENT
+   ========================= */
+
+.event {
+    position: relative;
+    overflow: hidden;
+}
+
+/* label kecil */
+.event::before {
+    content: "GRADUATION DAY";
+    position: absolute;
+    right: 8%;
+    top: 30px;
+    color: #c8a96b;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* kartu acara */
+.event-card {
+    position: relative;
+    border: 1px solid rgba(200,169,107,.5);
+    box-shadow:
+        0 15px 40px rgba(15,35,58,.10);
+}
+
+/* hover */
+.event-item {
+    transition: .3s ease;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   COUNTDOWN
+   ========================= */
+
+.countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* tahun besar background */
+.countdown-section::before {
+    content: "2026";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(200,169,107,.45);
+    font-size: 9px;
+    letter-spacing: 5px;
+}
+
+/* kotak countdown */
+.count-box {
+    position: relative;
+    border: 1px solid #c8a96b;
+    box-shadow:
+        0 10px 25px rgba(15,35,58,.12);
+    transition: .3s ease;
+}
+
+.count-box:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 15px 30px rgba(15,35,58,.18),
+        0 0 20px rgba(200,169,107,.15);
+}
+
+
+/* =========================
+   LOCATION
+   ========================= */
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+.location::before {
+    content: "✦";
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    color: #c8a96b;
+    font-size: 20px;
+}
+
+.location::after {
+    content: "✦";
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+    color: #c8a96b;
+    font-size: 20px;
+}
+
+
+/* =========================
+   CLOSING
+   ========================= */
+
+.closing {
+    position: relative;
+    overflow: hidden;
+}
+
+.closing::before {
+    content: "✦  ✦  ✦";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c8a96b;
+    letter-spacing: 10px;
+    font-size: 14px;
+}
+
+.closing h2 {
+    color: #c8a96b;
+}
+
+
+/* =========================
+   ANIMASI
+   ========================= */
+
+@keyframes goldSparkle {
+
+    0%, 100% {
+        opacity: .35;
+        transform: scale(.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .cover::before {
+        font-size: 100px;
+    }
+
+    .cover-content::before {
+        font-size: 8px;
+        letter-spacing: 4px;
+    }
+
+    .cover .name {
+        font-size: 30px;
+    }
+
+    .cover .name::before {
+        left: -45px;
+    }
+
+    .cover .name::after {
+        right: -45px;
+    }
+
+    .profile::before {
+        width: 280px;
+        height: 280px;
+    }
+
+    .event::before {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+}
+/* =====================================================
+   COVER & ISI UNDANGAN — SATU TEMA LUXURY
+   ===================================================== */
+
+#invitation {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(200, 169, 107, 0.12),
+            transparent 35%
+        ),
+        #f8f5ee;
+
+    color: #102a43;
+}
+
+/* Frame tipis di seluruh halaman isi */
+#invitation::before {
+    content: "";
+    position: fixed;
+    inset: 12px;
+    border: 1px solid rgba(200, 169, 107, 0.25);
+    pointer-events: none;
+    z-index: 50;
+}
+
+/* Ornamen dekorasi pojok */
+#invitation::after {
+    content: "✦";
+    position: fixed;
+    top: 30px;
+    right: 35px;
+    color: #c8a96b;
+    font-size: 20px;
+    animation: goldSparkle 2.5s infinite;
+    pointer-events: none;
+    z-index: 51;
+}
+
+
+/* =====================================================
+   SETIAP SECTION TERASA SEPERTI BAGIAN DARI COVER
+   ===================================================== */
+
+#invitation section {
+    position: relative;
+}
+
+
+/* =====================================================
+   INTRO
+   ===================================================== */
+
+#invitation .intro {
+    background:
+        linear-gradient(
+            180deg,
+            #102a43 0%,
+            #153b5c 100%
+        );
+
+    color: #fffdf8;
+    border-bottom: 1px solid #c8a96b;
+}
+
+#invitation .intro .label {
+    color: #c8a96b;
+}
+
+#invitation .intro h2 {
+    color: #fffdf8;
+    font-family: Georgia, serif;
+}
+
+#invitation .intro-text {
+    color: rgba(255,255,255,.85);
+}
+
+
+/* dekorasi intro */
+#invitation .intro::before {
+    content: "2026";
+    position: absolute;
+    right: -20px;
+    top: 30px;
+    font-family: Georgia, serif;
+    font-size: 140px;
+    font-weight: bold;
+    color: rgba(200,169,107,.07);
+}
+
+
+/* =====================================================
+   PROFILE
+   ===================================================== */
+
+#invitation .profile {
+    background: #f8f5ee;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#invitation .profile::after {
+    color: #c8a96b;
+}
+
+
+/* foto tetap jadi pusat perhatian */
+#invitation .profile-large {
+    border: 6px solid #fffdf8;
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 8px #fffdf8,
+        0 0 0 9px rgba(200,169,107,.7),
+        0 25px 55px rgba(16,42,67,.25);
+}
+
+
+/* =====================================================
+   QUOTE
+   ===================================================== */
+
+#invitation .quote {
+    background: #102a43;
+    color: #fffdf8;
+    border-top: 1px solid #c8a96b;
+    border-bottom: 1px solid #c8a96b;
+}
+
+#invitation .quote p {
+    color: #fffdf8;
+    font-family: Georgia, serif;
+}
+
+
+/* =====================================================
+   EVENT
+   ===================================================== */
+
+#invitation .event {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(200,169,107,.08),
+            transparent 40%
+        ),
+        #f8f5ee;
+}
+
+#invitation .event h2 {
+    font-family: Georgia, serif;
+    color: #102a43;
+}
+
+#invitation .event-card {
+    background: #fffdf8;
+    border: 1px solid rgba(200,169,107,.55);
+
+    box-shadow:
+        0 20px 45px rgba(16,42,67,.10),
+        0 0 0 5px rgba(200,169,107,.04);
+}
+
+#invitation .event-item h3 {
+    color: #102a43;
+}
+
+#invitation .event-item p {
+    color: #4b5d6b;
+}
+
+
+/* =====================================================
+   COUNTDOWN
+   ===================================================== */
+
+#invitation .countdown-section {
+    background: #102a43;
+    color: #fffdf8;
+    border-top: 1px solid #c8a96b;
+    border-bottom: 1px solid #c8a96b;
+}
+
+#invitation .countdown-section h2 {
+    color: #fffdf8;
+    font-family: Georgia, serif;
+}
+
+#invitation .countdown-section .label {
+    color: #c8a96b;
+}
+
+#invitation .count-box {
+    background: rgba(255,255,255,.04);
+    border: 1px solid #c8a96b;
+
+    box-shadow:
+        inset 0 0 20px rgba(200,169,107,.04),
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+#invitation .count-box span {
+    color: #c8a96b;
+}
+
+#invitation .count-box small {
+    color: rgba(255,255,255,.75);
+}
+
+
+/* =====================================================
+   LOCATION
+   ===================================================== */
+
+#invitation .location {
+    background: #f8f5ee;
+}
+
+#invitation .location h2 {
+    font-family: Georgia, serif;
+    color: #102a43;
+}
+
+#invitation .location-text {
+    color: #4b5d6b;
+}
+
+#invitation .location-button {
+    background: #102a43;
+    color: #fffdf8;
+    border: 1px solid #c8a96b;
+
+    box-shadow:
+        0 10px 25px rgba(16,42,67,.18);
+}
+
+#invitation .location-button:hover {
+    background: #c8a96b;
+    color: #102a43;
+}
+
+
+/* =====================================================
+   CLOSING
+   ===================================================== */
+
+#invitation .closing {
+    background:
+        linear-gradient(
+            180deg,
+            #102a43 0%,
+            #0c2238 100%
+        );
+
+    color: #fffdf8;
+    border-top: 1px solid #c8a96b;
+}
+
+#invitation .closing-text {
+    color: rgba(255,255,255,.85);
+}
+
+#invitation .closing h2 {
+    color: #c8a96b;
+    font-family: Georgia, serif;
+}
+
+#invitation .closing p {
+    color: rgba(255,255,255,.8);
+}
+
+#invitation .closing-name {
+    color: #c8a96b;
+}
+
+
+/* =====================================================
+   TRANSISI SAAT BUKA UNDANGAN
+   ===================================================== */
+
+#invitation.show {
+    animation:
+        invitationLuxuryReveal 1.3s ease forwards;
+}
+
+@keyframes invitationLuxuryReveal {
+
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* BENTUK DETAIL ACARA LEBIH MEWAH */
+#invitation .event-card {
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 10px 0;
+
+    background: #fffdf8;
+    border: 1px solid rgba(200, 169, 107, 0.6);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 45px rgba(16, 42, 67, 0.10),
+        0 0 0 6px rgba(200, 169, 107, 0.05);
+
+    overflow: hidden;
+}
+
+#invitation .event-item {
+    padding: 25px 30px;
+    border-bottom: 1px solid rgba(200, 169, 107, 0.25);
+}
+
+#invitation .event-item:last-child {
+    border-bottom: none;
+}
+/* =========================================
+   PREMIUM GRADUATION CARD
+   ========================================= */
+
+#invitation .event-card {
+    position: relative;
+    max-width: 720px;
+    margin: 45px auto 0;
+    padding: 18px;
+
+    background: linear-gradient(
+        145deg,
+        #fffdf8,
+        #f8f5ee
+    );
+
+    border: 1px solid rgba(200, 169, 107, 0.65);
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 60px rgba(16, 42, 67, 0.14),
+        0 5px 15px rgba(16, 42, 67, 0.06);
+
+    overflow: hidden;
+}
+
+/* Frame bagian dalam */
+#invitation .event-card::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+
+    border: 1px solid rgba(200, 169, 107, 0.25);
+    border-radius: 21px;
+
+    pointer-events: none;
+}
+
+/* Ornamen sudut */
+#invitation .event-card::after {
+    content: "✦";
+    position: absolute;
+
+    top: 16px;
+    right: 22px;
+
+    color: #c8a96b;
+    font-size: 18px;
+
+    opacity: 0.8;
+}
+
+/* =========================================
+   ITEM DALAM CARD
+   ========================================= */
+
+#invitation .event-item {
+    position: relative;
+
+    padding: 30px 35px;
+
+    text-align: center;
+
+    border-bottom: 1px solid
+        rgba(200, 169, 107, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+#invitation .event-item:last-child {
+    border-bottom: none;
+}
+
+/* Hover */
+#invitation .event-item:hover {
+    transform: translateY(-3px);
+
+    background: rgba(200, 169, 107, 0.04);
+}
+
+/* Judul */
+#invitation .event-item h3 {
+    margin-bottom: 10px;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #102a43;
+}
+
+/* Isi */
+#invitation .event-item p {
+    margin: 4px 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #596a78;
+}
+
+/* =========================================
+   ICON / ORNAMEN KECIL
+   ========================================= */
+
+#invitation .event-item h3::before {
+    content: "✦";
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #c8a96b;
+    font-size: 13px;
+}
+
+/* =========================================
+   COUNTDOWN LEBIH PREMIUM
+   ========================================= */
+
+#invitation .countdown {
+    gap: 18px;
+}
+
+#invitation .count-box {
+    position: relative;
+
+    min-width: 100px;
+    padding: 22px 15px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.02)
+        );
+
+    border: 1px solid rgba(200, 169, 107, 0.65);
+
+    box-shadow:
+        inset 0 0 25px rgba(200,169,107,0.04),
+        0 12px 30px rgba(0,0,0,0.15);
+
+    transition: 0.3s ease;
+}
+
+#invitation .count-box:hover {
+    transform: translateY(-6px);
+
+    border-color: #c8a96b;
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,0.2),
+        0 0 20px rgba(200,169,107,0.12);
+}
+
+#invitation .count-box span {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* =========================================
+   LOKASI BUTTON
+   ========================================= */
+
+#invitation .location-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+#invitation .location-button::before {
+    content: "⌖";
+    font-size: 18px;
+}
+
+#invitation .location-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(16,42,67,0.25);
+}
+
+/* =========================================
+   FOTO PROFIL LEBIH PREMIUM
+   ========================================= */
+
+#invitation .profile-large {
+    position: relative;
+
+    border-radius: 140px 140px 25px 25px;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+#invitation .profile-large:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 8px #fffdf8,
+        0 0 0 9px rgba(200,169,107,0.7),
+        0 30px 65px rgba(16,42,67,0.28);
+}
+
+/* =========================================
+   QUOTE SECTION
+   ========================================= */
+
+#invitation .quote {
+    position: relative;
+    overflow: hidden;
+}
+
+#invitation .quote::before {
+    content: "“";
+
+    position: absolute;
+
+    left: 8%;
+    top: 10px;
+
+    font-family: Georgia, serif;
+    font-size: 120px;
+
+    color: rgba(200,169,107,0.12);
+}
+
+#invitation .quote::after {
+    content: "”";
+
+    position: absolute;
+
+    right: 8%;
+    bottom: -35px;
+
+    font-family: Georgia, serif;
+    font-size: 120px;
+
+    color: rgba(200,169,107,0.12);
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #invitation .event-card {
+        margin-left: 18px;
+        margin-right: 18px;
+
+        border-radius: 22px;
+    }
+
+    #invitation .event-item {
+        padding: 25px 20px;
+    }
+
+    #invitation .countdown {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    #invitation .count-box {
+        min-width: 0;
+        padding: 18px 10px;
+    }
+
+    #invitation .count-box span {
+        font-size: 30px;
+    }
+}
+/* FIX DETAIL ACARA KETIMPA */
+#invitation .event {
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+#invitation .event-card {
+    position: relative;
+    z-index: 5;
+}
+
+#invitation .event-item {
+    position: relative;
+    z-index: 6;
+}
+
+/* Pastikan judul dan isi tetap di atas dekorasi */
+#invitation .event h2,
+#invitation .event .label,
+#invitation .event-item h3,
+#invitation .event-item p {
+    position: relative;
+    z-index: 7;
+}
+
+/* Ornamen tidak boleh menutupi isi */
+#invitation .event-card::before,
+#invitation .event-card::after {
+    pointer-events: none;
+    z-index: 1;
+}
+
+#invitation .event-item {
+    z-index: 2;
+}
+/* =========================================
+   DETAIL ACARA - TULISAN LEBIH JELAS
+   ========================================= */
+
+#invitation .event {
+    position: relative;
+    z-index: 10;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Tulisan kecil "WAKTU & TEMPAT" */
+#invitation .event .label {
+    position: relative;
+    z-index: 20;
+
+    color: #b18a45 !important;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+/* Judul DETAIL ACARA */
+#invitation .event h2 {
+    position: relative;
+    z-index: 20;
+
+    color: #102a43 !important;
+
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 35px;
+
+    text-shadow: none;
+}
+
+/* Kotak utama */
+#invitation .event-card {
+    position: relative;
+    z-index: 20;
+
+    background: #fffdf8 !important;
+
+    border: 1px solid #c8a96b !important;
+}
+
+/* Semua judul di dalam kotak */
+#invitation .event-item h3 {
+    position: relative;
+    z-index: 30;
+
+    color: #102a43 !important;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+/* Semua isi informasi */
+#invitation .event-item p {
+    position: relative;
+    z-index: 30;
+
+    color: #34495e !important;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+/* Ornamen tidak boleh menutupi tulisan */
+#invitation .event-card::before,
+#invitation .event-card::after,
+#invitation .event-item h3::before {
+    pointer-events: none;
+}
+
+/* Pastikan setiap item tetap di depan */
+#invitation .event-item {
+    position: relative;
+    z-index: 25;
+}
+/* =========================================
+   DETAIL ACARA - WARNA LEBIH JELAS
+   ========================================= */
+
+#invitation .event {
+    background: #f3eee3 !important;
+}
+
+/* Label WAKTU & TEMPAT */
+#invitation .event .label {
+    color: #a77b32 !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+/* Judul Detail Acara */
+#invitation .event h2 {
+    color: #102a43 !important;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* Kotak utama */
+#invitation .event-card {
+    background: #102a43 !important;
+    border: 2px solid #c8a96b !important;
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 45px rgba(16, 42, 67, 0.25),
+        0 0 0 5px rgba(200, 169, 107, 0.08);
+}
+
+/* Setiap isi */
+#invitation .event-item {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(200, 169, 107, 0.35);
+}
+
+/* Judul: HARI, WAKTU, TEMPAT */
+#invitation .event-item h3 {
+    color: #e2c27b !important;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Isi tanggal, jam, tempat */
+#invitation .event-item p {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Ornamen bintang */
+#invitation .event-item h3::before {
+    color: #e2c27b !important;
+}
+/* =========================================
+   ORNAMEN WISUDA - PREMIUM & CELEBRATION
+   ========================================= */
+
+#invitation section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen topi wisuda */
+#invitation .intro::after {
+    content: "🎓";
+
+    position: absolute;
+    right: 8%;
+    top: 35px;
+
+    font-size: 55px;
+
+    transform: rotate(12deg);
+
+    opacity: 0.9;
+
+    filter: drop-shadow(0 5px 8px rgba(0,0,0,0.15));
+
+    animation: graduationFloat 3s ease-in-out infinite;
+}
+
+/* Bintang dekorasi */
+#invitation .profile::before {
+    content: "✦     ✧     ✦";
+
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #c8a96b;
+
+    font-size: 20px;
+    letter-spacing: 8px;
+
+    white-space: nowrap;
+}
+
+/* Ornamen orang wisuda */
+#invitation .profile::after {
+    content: "🎓";
+
+    position: absolute;
+
+    bottom: 25px;
+    right: 7%;
+
+    font-size: 48px;
+
+    opacity: 0.8;
+
+    transform: rotate(-8deg);
+
+    animation: graduationFloat 3.5s ease-in-out infinite;
+}
+
+/* =========================================
+   CONFETTI HALUS
+   ========================================= */
+
+#invitation .event::before {
+    content:
+        "✦  •  ✧        •  ✦        ✧  •  ✦";
+
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #c8a96b;
+
+    font-size: 16px;
+    letter-spacing: 5px;
+
+    opacity: 0.7;
+}
+
+/* =========================================
+   ORNAMEN COUNTDOWN
+   ========================================= */
+
+#invitation .countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+#invitation .countdown-section::before {
+    content: "🎓";
+
+    position: absolute;
+
+    left: 7%;
+    top: 35px;
+
+    font-size: 45px;
+
+    opacity: 0.8;
+
+    transform: rotate(-12deg);
+}
+
+#invitation .countdown-section::after {
+    content: "✦  ✧  ✦  ✧  ✦";
+
+    position: absolute;
+
+    bottom: 25px;
+    right: 5%;
+
+    color: #c8a96b;
+
+    font-size: 18px;
+    letter-spacing: 7px;
+
+    opacity: 0.7;
+}
+
+/* =========================================
+   ORNAMEN LOKASI
+   ========================================= */
+
+#invitation .location::before {
+    content: "✦";
+
+    position: absolute;
+
+    left: 12%;
+    top: 45px;
+
+    color: #c8a96b;
+
+    font-size: 28px;
+}
+
+#invitation .location::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 12%;
+    bottom: 45px;
+
+    color: #c8a96b;
+
+    font-size: 28px;
+}
+
+/* =========================================
+   PENUTUP - SUASANA PERAYAAN
+   ========================================= */
+
+#invitation .closing {
+    position: relative;
+    overflow: hidden;
+}
+
+#invitation .closing::before {
+    content: "🎓";
+
+    position: absolute;
+
+    left: 8%;
+    top: 45px;
+
+    font-size: 50px;
+
+    opacity: 0.75;
+
+    transform: rotate(-10deg);
+}
+
+#invitation .closing::after {
+    content: "✦     ✧     ✦";
+
+    position: absolute;
+
+    right: 7%;
+    bottom: 45px;
+
+    color: #c8a96b;
+
+    font-size: 22px;
+
+    letter-spacing: 8px;
+}
+
+/* =========================================
+   ANIMASI TOPI WISUDA
+   ========================================= */
+
+@keyframes graduationFloat {
+
+    0% {
+        transform: translateY(0) rotate(8deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(12deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(8deg);
+    }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    #invitation .intro::after {
+        right: 5%;
+        top: 20px;
+        font-size: 38px;
+    }
+
+    #invitation .profile::after {
+        right: 4%;
+        font-size: 35px;
+    }
+
+    #invitation .countdown-section::before {
+        left: 4%;
+        font-size: 32px;
+    }
+
+    #invitation .closing::before {
+        left: 4%;
+        font-size: 35px;
+    }
+}
+/* ==================================================
+   GRAND GRADUATION CELEBRATION 🎓✨
+   ================================================== */
+
+#invitation section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ================================
+   CONFETTI GLOBAL
+   ================================ */
+
+#invitation section::before {
+    pointer-events: none;
+}
+
+#invitation .intro::before {
+    content:
+        "✦     •     ✧          •     ✦          •     ✧     •     ✦";
+
+    position: absolute;
+    top: 18px;
+    left: 50%;
+
+    width: 120%;
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    color: #c8a96b;
+    font-size: 17px;
+    letter-spacing: 10px;
+
+    opacity: 0.8;
+}
+
+/* ================================
+   TOPI WISUDA BESAR
+   ================================ */
+
+#invitation .intro::after {
+    content: "🎓";
+
+    position: absolute;
+    top: 45px;
+    right: 7%;
+
+    font-size: 70px;
+
+    transform: rotate(15deg);
+
+    filter:
+        drop-shadow(0 8px 10px rgba(0,0,0,.18));
+
+    animation: capFloat 3s ease-in-out infinite;
+}
+
+/* Topi kiri */
+#invitation .profile::before {
+    content: "🎓";
+
+    position: absolute;
+    top: 25px;
+    left: 7%;
+
+    font-size: 55px;
+
+    transform: rotate(-15deg);
+
+    animation: capFloat 3.5s ease-in-out infinite;
+}
+
+/* ================================
+   FOTO = HERO
+   ================================ */
+
+#invitation .profile-large {
+    position: relative;
+    z-index: 5;
+
+    border: 7px solid #fffdf8 !important;
+
+    box-shadow:
+        0 0 0 2px #c8a96b,
+        0 0 0 10px #fffdf8,
+        0 0 0 11px #c8a96b,
+        0 25px 60px rgba(16,42,67,.30) !important;
+}
+
+/* Sparkle mengelilingi foto */
+#invitation .profile {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(200,169,107,.12),
+            transparent 15%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(200,169,107,.10),
+            transparent 18%
+        ),
+        #f8f5ee !important;
+}
+
+/* ================================
+   QUOTE — CONFETTI
+   ================================ */
+
+#invitation .quote::before {
+    content:
+        "✦  ✧  •  ✦  •  ✧  ✦";
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #c8a96b;
+
+    opacity: .8;
+}
+
+#invitation .quote::after {
+    content:
+        "✧     🎓     ✦";
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 30px;
+
+    color: #c8a96b;
+
+    opacity: .8;
+}
+
+/* ================================
+   DETAIL ACARA
+   ================================ */
+
+#invitation .event {
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(200,169,107,.13),
+            transparent 15%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(200,169,107,.13),
+            transparent 15%
+        ),
+        #f3eee3 !important;
+}
+
+/* Dekorasi atas */
+#invitation .event::before {
+    content:
+        "✦   ✧   🎓   ✧   ✦";
+
+    position: absolute;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #c8a96b;
+
+    font-size: 24px;
+    letter-spacing: 8px;
+}
+
+/* ================================
+   COUNTDOWN — PARTY MODE
+   ================================ */
+
+#invitation .countdown-section {
+    background:
+        radial-gradient(
+            circle at 10% 30%,
+            rgba(200,169,107,.13),
+            transparent 18%
+        ),
+        radial-gradient(
+            circle at 90% 70%,
+            rgba(200,169,107,.13),
+            transparent 18%
+        ),
+        #102a43 !important;
+}
+
+#invitation .countdown-section::before {
+    content: "🎓";
+
+    position: absolute;
+
+    left: 6%;
+    top: 30px;
+
+    font-size: 55px;
+
+    transform: rotate(-15deg);
+
+    animation: capFloat 3s infinite;
+}
+
+#invitation .countdown-section::after {
+    content:
+        "✦  ✧  •  ✦  •  ✧  ✦";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: 30px;
+
+    color: #c8a96b;
+
+    font-size: 22px;
+
+    letter-spacing: 8px;
+}
+
+/* ================================
+   COUNTDOWN BOX
+   ================================ */
+
+#invitation .count-box {
+    border: 2px solid #c8a96b !important;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.025)
+        ) !important;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.2),
+        inset 0 0 20px rgba(200,169,107,.05);
+}
+
+#invitation .count-box span {
+    color: #e2c27b !important;
+}
+
+/* ================================
+   LOKASI
+   ================================ */
+
+#invitation .location {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(200,169,107,.14),
+            transparent 35%
+        ),
+        #f8f5ee !important;
+}
+
+#invitation .location::before {
+    content:
+        "✦       🎓       ✦";
+
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #c8a96b;
+
+    font-size: 25px;
+
+    letter-spacing: 8px;
+}
+
+/* ================================
+   PENUTUP — GRAND FINALE
+   ================================ */
+
+#invitation .closing {
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(200,169,107,.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #102a43,
+            #081b2d
+        ) !important;
+}
+
+#invitation .closing::before {
+    content:
+        "✦    🎓    ✧    🎓    ✦";
+
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #c8a96b;
+
+    font-size: 25px;
+
+    letter-spacing: 10px;
+}
+
+#invitation .closing::after {
+    content:
+        "✦  ✧  •  ✦  •  ✧  ✦";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #c8a96b;
+
+    font-size: 20px;
+
+    letter-spacing: 8px;
+}
+
+/* ================================
+   ANIMASI
+   ================================ */
+
+@keyframes capFloat {
+
+    0% {
+        transform: translateY(0) rotate(10deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(16deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(10deg);
+    }
+}
+
+/* ================================
+   MOBILE
+   ================================ */
+
+@media (max-width: 600px) {
+
+    #invitation .intro::after {
+        font-size: 45px;
+        right: 4%;
+    }
+
+    #invitation .profile::before {
+        font-size: 40px;
+        left: 3%;
+    }
+
+    #invitation .countdown-section::before {
+        font-size: 40px;
+        left: 3%;
+    }
+
+    #invitation .event::before {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    #invitation .closing::before {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+}
+/* =========================================
+   ELEGANT GRADUATION DECORATION
+   DEWASA • MEWAH • FESTIVE
+   ========================================= */
+
+#invitation section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---------- ORNAMEN WISUDA UTAMA ---------- */
+
+#invitation .intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Siluet toga + topi wisuda */
+#invitation .intro::after {
+    content: "GRADUATION";
+
+    position: absolute;
+    right: -35px;
+    bottom: 25px;
+
+    font-family: Georgia, serif;
+    font-size: 95px;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+    color: rgba(200, 169, 107, 0.07);
+
+    transform: rotate(-90deg);
+}
+
+/* Tahun besar */
+#invitation .intro::before {
+    content: "2026";
+
+    position: absolute;
+    right: 7%;
+    top: 35px;
+
+    font-family: Georgia, serif;
+    font-size: 110px;
+    font-weight: bold;
+
+    color: rgba(200, 169, 107, 0.08);
+
+    letter-spacing: 5px;
+}
+
+/* ---------- FOTO WISUDAWAN ---------- */
+
+#invitation .profile {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamen laurel / kemenangan */
+#invitation .profile::before {
+    content: "❮  ✦  ❯";
+
+    position: absolute;
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 34px;
+    letter-spacing: 18px;
+
+    color: #c8a96b;
+}
+
+/* Garis dekoratif elegan */
+#invitation .profile::after {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    right: -120px;
+    top: 50%;
+
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 25px rgba(200,169,107,.035),
+        0 0 0 50px rgba(200,169,107,.025);
+}
+
+/* ---------- FOTO ---------- */
+
+#invitation .profile-large {
+    position: relative;
+    z-index: 5;
+
+    border: 6px solid #fffdf8 !important;
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 9px #fffdf8,
+        0 0 0 10px rgba(200,169,107,.7),
+        0 25px 55px rgba(16,42,67,.28) !important;
+}
+
+/* ---------- QUOTE ---------- */
+
+#invitation .quote {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tassel dekoratif */
+#invitation .quote::before {
+    content: "✦";
+
+    position: absolute;
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 20px;
+
+    color: #c8a96b;
+}
+
+/* ---------- DETAIL ACARA ---------- */
+
+#invitation .event {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header ornament */
+#invitation .event::before {
+    content: "GRADUATION  •  2026";
+
+    position: absolute;
+
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: #b18a45;
+}
+
+/* Ornamen lingkaran */
+#invitation .event::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: -170px;
+    bottom: -150px;
+
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 25px rgba(200,169,107,.035),
+        0 0 0 50px rgba(200,169,107,.025);
+}
+
+/* ---------- CARD DETAIL ---------- */
+
+#invitation .event-card {
+    position: relative;
+    z-index: 5;
+
+    background: #102a43 !important;
+
+    border: 1px solid #c8a96b !important;
+    border-radius: 26px;
+
+    box-shadow:
+        0 25px 55px rgba(16,42,67,.22);
+}
+
+/* ---------- COUNTDOWN ---------- */
+
+#invitation .countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tahun besar */
+#invitation .countdown-section::before {
+    content: "2026";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: Georgia, serif;
+    font-size: 180px;
+    font-weight: bold;
+
+    color: rgba(200,169,107,.055);
+
+    letter-spacing: 15px;
+
+    pointer-events: none;
+}
+
+/* Dekorasi gold */
+#invitation .countdown-section::after {
+    content: "✦     ✦     ✦";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #c8a96b;
+
+    font-size: 16px;
+    letter-spacing: 10px;
+}
+
+/* ---------- LOKASI ---------- */
+
+#invitation .location {
+    position: relative;
+    overflow: hidden;
+}
+
+#invitation .location::before {
+    content: "THE CEREMONY";
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: #b18a45;
+}
+
+#invitation .location::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -130px;
+    bottom: -130px;
+
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 25px rgba(200,169,107,.035),
+        0 0 0 50px rgba(200,169,107,.025);
+}
+
+/* ---------- PENUTUP ---------- */
+
+#invitation .closing {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Grand graduation mark */
+#invitation .closing::before {
+    content: "✦  GRADUATION  ✦";
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: #c8a96b;
+}
+
+/* Tahun */
+#invitation .closing::after {
+    content: "2026";
+
+    position: absolute;
+
+    right: 5%;
+    bottom: -35px;
+
+    font-family: Georgia, serif;
+    font-size: 130px;
+    font-weight: bold;
+
+    color: rgba(200,169,107,.06);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    #invitation .intro::before {
+        font-size: 65px;
+        right: 3%;
+    }
+
+    #invitation .intro::after {
+        font-size: 55px;
+        right: -20px;
+    }
+
+    #invitation .countdown-section::before {
+        font-size: 100px;
+    }
+
+    #invitation .closing::after {
+        font-size: 80px;
+    }
+}
+/* =====================================================
+   CIVIL ENGINEERING GRADUATION
+   D3 TEKNIK SIPIL • LUXURY • NAVY & GOLD
+   ===================================================== */
+
+/* ---------- IDENTITAS TEKNIK SIPIL ---------- */
+
+#invitation .intro {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Watermark CIVIL ENGINEERING */
+#invitation .intro::before {
+    content: "CIVIL ENGINEERING";
+
+    position: absolute;
+    right: -35px;
+    bottom: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    letter-spacing: 8px;
+
+    color: rgba(200, 169, 107, 0.06);
+
+    transform: rotate(-90deg);
+
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Garis seperti blueprint */
+#invitation .intro::after {
+    content: "";
+
+    position: absolute;
+    width: 330px;
+    height: 330px;
+
+    right: -180px;
+    top: -130px;
+
+    border: 1px solid rgba(200,169,107,.22);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 20px rgba(200,169,107,.035),
+        0 0 0 40px rgba(200,169,107,.025),
+        0 0 0 60px rgba(200,169,107,.018);
+
+    pointer-events: none;
+}
+
+
+/* ---------- PROFIL WISUDAWAN ---------- */
+
+#invitation .profile {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Technical drawing */
+#invitation .profile::before {
+    content:
+        "D3 TEKNIK SIPIL"
+        "\A"
+        "POLITEKNIK NEGERI PADANG";
+
+    white-space: pre;
+
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    line-height: 2;
+    letter-spacing: 3px;
+
+    color: rgba(16,42,67,.18);
+
+    border-left: 2px solid rgba(200,169,107,.5);
+    padding-left: 12px;
+}
+
+/* Ornamen blueprint lingkaran */
+#invitation .profile::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    left: -180px;
+    bottom: -150px;
+
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 20px rgba(200,169,107,.035),
+        0 0 0 40px rgba(200,169,107,.025);
+}
+
+
+/* ---------- FOTO ---------- */
+
+#invitation .profile-large {
+    position: relative;
+    z-index: 5;
+
+    border: 6px solid #fffdf8 !important;
+
+    box-shadow:
+        0 0 0 1px #c8a96b,
+        0 0 0 9px #fffdf8,
+        0 0 0 10px #c8a96b,
+        0 25px 55px rgba(16,42,67,.28) !important;
+}
+
+
+/* ---------- KUTIPAN ---------- */
+
+#invitation .quote {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Engineering line */
+#invitation .quote::before {
+    content: "CIVIL • STRUCTURE • FUTURE";
+
+    position: absolute;
+
+    top: 22px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: rgba(200,169,107,.7);
+}
+
+
+/* ---------- DETAIL ACARA ---------- */
+
+#invitation .event {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Label teknik */
+#invitation .event::before {
+    content: "CIVIL ENGINEERING • GRADUATION 2026";
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #a77b32;
+
+    white-space: nowrap;
+}
+
+/* Blueprint corner */
+#invitation .event::after {
+    content: "01";
+
+    position: absolute;
+
+    right: 7%;
+    bottom: 20px;
+
+    font-family: Georgia, serif;
+    font-size: 90px;
+    font-weight: bold;
+
+    color: rgba(16,42,67,.045);
+}
+
+
+/* ---------- CARD DETAIL ---------- */
+
+#invitation .event-card {
+    position: relative;
+    z-index: 5;
+
+    background: #102a43 !important;
+
+    border: 1px solid #c8a96b !important;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 25px 55px rgba(16,42,67,.22);
+}
+
+/* Garis teknik di dalam card */
+#invitation .event-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border: 1px solid rgba(200,169,107,.25);
+
+    border-radius: 18px;
+
+    pointer-events: none;
+}
+
+
+/* ---------- COUNTDOWN ---------- */
+
+#invitation .countdown-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* CIVIL ENGINEERING watermark */
+#invitation .countdown-section::before {
+    content: "CIVIL";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+
+    letter-spacing: 15px;
+
+    color: rgba(200,169,107,.045);
+
+    pointer-events: none;
+}
+
+/* Gold engineering line */
+#invitation .countdown-section::after {
+    content: "──────────  2026  ──────────";
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
+    color: rgba(200,169,107,.65);
+
+    white-space: nowrap;
+}
+
+
+/* ---------- LOKASI ---------- */
+
+#invitation .location {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Technical location heading */
+#invitation .location::before {
+    content: "PROJECT LOCATION";
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 5px;
+
+    color: #a77b32;
+}
+
+/* Blueprint circle */
+#invitation .location::after {
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    right: -150px;
+    bottom: -150px;
+
+    border: 1px solid rgba(200,169,107,.25);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 20px rgba(200,169,107,.035),
+        0 0 0 40px rgba(200,169,107,.025);
+}
+
+
+/* ---------- PENUTUP ---------- */
+
+#invitation .closing {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Identitas jurusan */
+#invitation .closing::before {
+    content: "D3 TEKNIK SIPIL  •  POLITEKNIK NEGERI PADANG";
+
+    position: absolute;
+
+    top: 28px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #c8a96b;
+
+    white-space: nowrap;
+}
+
+/* 2026 watermark */
+#invitation .closing::after {
+    content: "2026";
+
+    position: absolute;
+
+    right: 4%;
+    bottom: -40px;
+
+    font-family: Georgia, serif;
+    font-size: 130px;
+    font-weight: bold;
+
+    color: rgba(200,169,107,.055);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   DETAIL TEKNIK SIPIL PADA TEKS
+   ===================================================== */
+
+#invitation .profile h2 {
+    position: relative;
+}
+
+#invitation .profile h2::after {
+    content: "CIVIL ENGINEERING";
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #b18a45;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    #invitation .intro::before {
+        font-size: 38px;
+        right: -20px;
+    }
+
+    #invitation .profile::before {
+        left: 18px;
+        font-size: 8px;
+    }
+
+    #invitation .event::before {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    #invitation .countdown-section::before {
+        font-size: 110px;
+    }
+
+    #invitation .closing::before {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+}
